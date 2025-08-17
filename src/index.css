@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+    --color-vermelho: #B22C23;
+    --color-vinho-um: #720C0C;
+    --color-vinho-dois: #430202;
+    --color-amarelo: #F7DE85;
+
+    --default-font-family: 'erica one', sans serif;
+}
