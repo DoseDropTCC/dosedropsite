@@ -1,8 +1,9 @@
-import doselogo from '../assets/doseDropLogo.png'
-import iconelua from '../assets/iconeLua.png'
-import iconelogin from '../assets/iconeLogIn.png'
-import iconeconfig from '../assets/iconeConfig.png'
-import iconeinfo from '../assets/iconeInfo.png'
+import doselogo from '../assets/iconesHeader/doseDropLogo.png'
+import iconelua from '../assets/iconesHeader/iconeLua.png'
+import iconelogin from '../assets/iconesHeader/iconeLogIn.png'
+import iconeconfig from '../assets/iconesHeader/iconeConfig.png'
+import iconeinfo from '../assets/iconesHeader/iconeInfo.png'
+
 export function HeaderSite () {
     return (
         <header className='flex justify-center items-center bg-vinho-um'>
@@ -11,16 +12,16 @@ export function HeaderSite () {
  
             <div className='p-5 mr-10'>
                <button>
-                    <img src={iconelua} alt="Ícone da lua" className='h-20'/>
+                    <img src={iconelua} alt="Ícone da lua" className='bt-header'/>
                 </button>
                 <button>
-                    <img src={iconeinfo} alt="Ícone de mais informações" className='h-20'/>
+                    <img src={iconeinfo} alt="Ícone de mais informações" className='bt-header'/>
                 </button>
                 <button>
-                    <img src={iconelogin} alt="Ícone de login" className='h-20'/>
+                    <img src={iconelogin} alt="Ícone de login" className='bt-header'/>
                 </button>
                 <button >
-                    <img src={iconeconfig} alt="Ícone de configurações" className='h-20'/>
+                    <img src={iconeconfig} alt="Ícone de configurações" className='bt-header'/>
                 </button>
             </div>
         </header>

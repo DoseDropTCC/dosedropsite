@@ -8,3 +8,24 @@
 
     --default-font-family: 'erica one', sans serif;
 }
+
+
+.bt-header {
+    @apply h-20;
+}
+
+.cartao-ft {
+    @apply flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10;
+}
+
+.fotos-padrao {
+    @apply size-60 rounded-3xl;
+}
+
+.footer-contatos {
+    @apply flex items-center p-2 mt-4;
+}
+
+.footer-contatos-txt {
+    @apply flex justify-center text-2xl  text-amarelo text-center;
+}
