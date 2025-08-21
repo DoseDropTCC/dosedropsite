@@ -5,17 +5,27 @@
     --color-vinho-um: #720C0C;
     --color-vinho-dois: #430202;
     --color-amarelo: #F7DE85;
+    --color-amarelo-claro: #FFFBEA;
 
-    --default-font-family: 'erica one', sans serif;
+    --font-erica: 'erica one', sans serif;
+    --font-familjen: "Familjen Grotesk", sans-serif;
 }
 
 
 .bt-header {
-    @apply h-20;
+    @apply h-20 hover:h-18 duration-150 ease-in cursor-pointer;
+}
+
+.txt-links {
+    @apply transition duration-300 hover:text-vinho-dois;
 }
 
 .cartao-ft {
-    @apply flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10;
+    @apply font-familjen flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10;
+}
+
+.txt-sobrenos {
+    @apply font-black flex justify-center text-3xl text-vermelho mt-3;    
 }
 
 .fotos-padrao {
@@ -23,9 +33,25 @@
 }
 
 .footer-contatos {
-    @apply flex items-center p-2 mt-4;
+    @apply flex items-center p-2 mt-6;
 }
 
 .footer-contatos-txt {
     @apply flex justify-center text-2xl  text-amarelo text-center;
+}
+
+.cartao-produto {
+    @apply flex items-center w-140 h-40 mt-8 ml-10 font-familjen font-semibold rounded-l-lg;
+}
+
+.cartao-produto-ul {
+    @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left ;
+}
+
+.p-jogo {
+    @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl;
+}
+
+.refs {
+    @apply flex items-center justify-center text-6xl font-erica italic text-vermelho ml-5 underline m-5;
 }

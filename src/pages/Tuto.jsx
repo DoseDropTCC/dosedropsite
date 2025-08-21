@@ -1,12 +1,10 @@
-import { Link } from "react-router"
 import { Navegacao } from "../components/Navegacao"
 
-
-export function Itens() {
+export function Tuto () {
     return(
         <div>
             <Navegacao />
-            <h1>E</h1>
+            <h1>TEEEEEEEEESTE!</h1>
         </div>
     )
 }

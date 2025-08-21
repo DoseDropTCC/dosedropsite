@@ -10,30 +10,27 @@ import { FooterSite } from "../components/FooterSite"
 
 export function Home () {
     return (
-        <main>
+        <main className="bg-amarelo-claro">
             <div className="flex justify-center items-center">
                 <img src={mito} alt="bolsoMito" className="bg-black w-full h-50"/>
             </div>
 
-            <div className="flex justify-center align-center p-8 text-vermelho bg-amarelo">
-                <nav className="space-x-25 text-xl">
-                    <button>
-                      <Link to='/produtos'> Produto </Link>
+            <div className="font-familjen flex justify-center align-center p-6 text-vermelho bg-amarelo font-bold">
+                <nav className="space-x-25 text-xl ">
+                    <button >
+                      <Link to='/projeto' className="txt-links"> Projeto </Link>
                     </button>
                     <button>
-                        <Link to='/produtos'> Produto </Link>
+                        <Link to='/produto' className="txt-links"> Produto </Link>
                     </button>
                     <button>
-                        <Link to='/sobrenos'> Sobre nós </Link>
+                        <Link to='/jogo' className="txt-links"> Jogo </Link>
                     </button>
                     <button>
-                        <Link to='/jogo'> Jogo </Link>
+                        <Link to='/referencias' className="txt-links"> Referências </Link>
                     </button>
                     <button>
-                        <Link to='/referencias'> Referências </Link>
-                    </button>
-                    <button>
-                        <Link to='/itens'> Itens </Link>
+                        <Link to='/itens' className="txt-links"> Itens </Link>
                     </button>
                 </nav>
             </div>
@@ -49,35 +46,52 @@ export function Home () {
                 <p className="p-8">Seu diferencial será uma agenda para anotar os remédios que ja foram disponibilizados no devido dia, com uma tela LCD para executar essa função.</p>
             </div>
 
-            <h1 className="text-vermelho text-8xl flex justify-center mt-15">Nosso App</h1>
-            <iframe className='w-200 h-100' flex src="https://www.youtube.com/watch?v=xNRJwmlRBNU" frameborder="0"></iframe>
+            <h1 className="font-erica text-vermelho text-8xl flex justify-center mt-15">Nosso App</h1>
+            <div className="flex justify-center">
+            <iframe className="rounded-3xl mt-5"
+                width="600" 
+                height="345" 
+                src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; 
+                autoplay; 
+                clipboard-write; 
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+            >
+            </iframe>
+            </div>
 
             <nav className="mt-10 flex justify-center text-xl">
-                <a href="https://youtu.be/eSRgRVx9ZjQ?si=fhzOWhVypZA9-qXp" className="underline text-vermelho bg-amarelo p-5">CLIQUE AQUI PARA ACESSAR O NOSSO APP</a>
+                <a href="https://youtu.be/eSRgRVx9ZjQ?si=fhzOWhVypZA9-qXp" className="underline text-vermelho bg-amarelo p-5 font-familjen">CLIQUE AQUI PARA ACESSAR O NOSSO APP</a>
             </nav>
 
             <div>
-              <h1 className="text-vermelho text-8xl flex justify-center mt-15">Sobre Nós</h1>
+              <h1 className="font-erica text-vermelho text-8xl flex justify-center mt-15">Sobre Nós</h1>
 
-              <div className="p-20 flex justify-between">
+              <div className="p-20 flex justify-between ">
                 <div>
                   <img className="fotos-padrao" src={kawan} alt="Imagem Kawan"/>
-                  <p className="flex justify-center text-3xl text-vermelho mt-3">Kawan</p>
+                  <p className="txt-sobrenos">Kawan</p>
                 </div>
 
                 <div>
                   <img className="fotos-padrao" src={renato} alt="Imagem Renato"/>
-                  <p className="flex justify-center text-3xl text-vermelho mt-3">Renato</p>
+                  <p className="txt-sobrenos">Renato</p>
                 </div>
                 
                 <div>
                     <img className="fotos-padrao" src={gustavo} alt="Imagem Gustavo"/>
-                    <p className="flex justify-center text-3xl text-vermelho mt-3">Gustavo</p>
+                    <p className="txt-sobrenos">Gustavo</p>
                 </div>
 
                 <div>
                   <img className="fotos-padrao" src={gabriel} alt="Imagem Gabriel" />
-                  <p className="flex justify-center text-3xl text-vermelho mt-3">Gabriel</p>
+                  <p className="txt-sobrenos">Gabriel</p>
                 </div>
             </div>
            </div>
