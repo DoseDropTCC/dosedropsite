@@ -3,7 +3,7 @@ import { Link } from "react-router"
 export function Navegacao (){
     return(
         <div>
-            <div className="font-familjen flex justify-center align-center p-6 text-vermelho">
+            <div className="font-familjen flex justify-center align-center p-6 text-vermelho dark:text-amarelo">
                 <nav className="space-x-25 text-xl ">
                     <button >
                       <Link to='/projeto' className="txt-links"> Projeto </Link>

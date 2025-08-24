@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --color-vermelho: #B22C23;
     --color-vinho-um: #720C0C;
@@ -21,11 +23,11 @@
 }
 
 .cartao-ft {
-    @apply font-familjen flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10;
+    @apply font-familjen flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
 }
 
 .txt-sobrenos {
-    @apply font-black flex justify-center text-3xl text-vermelho mt-3;    
+    @apply font-black flex justify-center text-3xl text-vermelho mt-3 dark:text-amarelo;    
 }
 
 .fotos-padrao {
@@ -45,13 +47,13 @@
 }
 
 .cartao-produto-ul {
-    @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left ;
+    @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left dark:bg-vermelho dark:text-amarelo;
 }
 
 .p-jogo {
-    @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl;
+    @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl dark:text-amarelo dark:bg-vermelho;
 }
 
 .refs {
-    @apply flex items-center justify-center text-6xl font-erica italic text-vermelho ml-5 underline m-5;
+    @apply flex items-center justify-start text-6xl font-erica italic text-vermelho underline m-5 ml-30 dark:text-amarelo;
 }

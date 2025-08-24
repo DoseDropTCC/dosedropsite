@@ -6,12 +6,12 @@ import gmail from "../assets/redes/gmail.png"
 export function FooterSite() {
     return (
         <div className=" bg-vinho-um p-5 grid font-familjen ">
-            <div className="flex justify-center w-auto gap-2">
+            <div className="flex justify-center p-5 gap-2">
                 <p className=" mt-5 text-amarelo text-4xl">Clique na estrela para avaliar-nos!</p>
                 <img c src={estrela} alt="Ícone de estrela" className="mt-4 inline-block align-middle w-10"/>
             </div>
 
-            <div className="grid grid-cols-3 font-black">
+            <div className="flex justify-center gap-15">
                 <div className="footer-contatos">
                     <img src={insta} alt="Logo do Instagram" className="bt-header "/>
                     <p className="footer-contatos-txt">@dose_drop</p>

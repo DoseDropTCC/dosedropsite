@@ -4,10 +4,11 @@ import remedioRef from "../assets/remedioRef.png"
 
 export function Referencias() {
     return(
-        <main className="flex">
+        <main className="bg-amarelo-claro dark:bg-vinho-dois">
             <Navegacao />
+            <section className="flex">
             <div className="w-1/2 mt-15">
-                <h1 className="font-erica text-vinho-um text-8xl flex justify-center mt-15 mb-10" >REFERÊNCIAS</h1>
+                <h1 className="font-erica text-vinho-um text-8xl flex justify-center mt-15 mb-10 dark:text-amarelo" >REFERÊNCIAS</h1>
                 <nav>
                     <ul className="refs">
                         <li>REFERÊNCIA #1</li>
@@ -26,6 +27,8 @@ export function Referencias() {
             <div className="w-1/2 mt-15">
                 <img className="h-200 w-full" src={remedioRef} alt="Cartela de Remédios" />
             </div>
+            </section>
+
         </main>
     )
 }
