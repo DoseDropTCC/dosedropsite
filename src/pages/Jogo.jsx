@@ -16,7 +16,7 @@ export function Jogo() {
                         <p className="p-jogo">O objetivo sera defender sua base dos idosos, com medicamentos que possuem mecânicas únicas com o objetivo principal de curar idosos.</p>
                     </div>
                 </div>
-                <hr className="border-5 h-150 border-vinho-um rounded-full dark:border-amarelo" />
+                <hr className="border-5 h-150 border-vinho-um rounded-full dark:border-amarelo mx-8" />
 
                 <div  className="w-1/2">
                     <h2 className="font-erica text-vinho-um text-8xl flex justify-center mb-10 dark:text-amarelo">TRAILER</h2>

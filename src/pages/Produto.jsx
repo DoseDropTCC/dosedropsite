@@ -24,7 +24,7 @@ export function Produto() {
                             <li>Tower Pro</li>
                             <li>Valor: R$ 67,90</li>
                         </ul>
-                        <img src={passoMotor} alt="Imagem do Passo Motor" className='rounded-4xl size-40'/>
+                        <img src={passoMotor} alt="Imagem do Passo Motor" className='rounded-full size-40'/>
                     </div>
 
                     <div className="cartao-produto">
@@ -64,12 +64,12 @@ export function Produto() {
                     </div>
 
                     <div className="cartao-produto">
-                        <ul className="cartao-produto-ul">
+                        <ul className="cartao-produto-ul ">
                             <li>Filamento PLA Fibra de Carbono </li>
                             <li>1,75mm 1Kg</li>
                             <li>Valor: R$ 177,69</li>
                         </ul>
-                        <img src={filamento} alt="Imagem do Esp 32" className='rounded-full size-40'/>
+                        <img src={filamento} alt="Imagem do Esp 32" className='rounded-full size-40 bg-white'/>
                     </div>
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export function Produto() {
                         </iframe>
                     </div>
                     <h2 className=" flex justify-center font-familjen text-vinho-um text-3xl mt-5 dark:text-amarelo">O projeto final custou R$305,76</h2>
-                    <hr className="border-5 border-vinho-dois m-5 dark:border-amarelo" />
+                    <hr className="border-5 border-white m-5 dark:border-amarelo" />
                     <h2 className=" flex justify-center font-erica  text-vinho-um text-3xl mt-5 dark:text-amarelo">Resultado final:</h2>
                     <img className="w-180 rounded-3xl mt-10" src={resultado} alt="Imagem do produto final" />
                 </div>

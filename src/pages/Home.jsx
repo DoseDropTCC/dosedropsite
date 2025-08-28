@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useContext, useState} from "react"
 import { Link } from "react-router"
 import mito from "../assets/mito.jpg"
 import dispenser from "../assets/dispenser.png"
@@ -11,6 +11,7 @@ import kawanL from "../assets/fotosLinkedin/kawanLinkedin.png"
 import renatoL from "../assets/fotosLinkedin/renatoLinkedin.png"
 import gustavoL from "../assets/fotosLinkedin/gustavoLinkedin.png"
 import gabrielL from "../assets/fotosLinkedin/gabrielLinkedin.png"
+
 
 export function Home () {
     const [mouseKawan, setMouseKawan] = useState(false);
@@ -56,16 +57,18 @@ export function Home () {
       const gabrielfoto = mouseGabriel ? gabrielL : gabriel;
 
 
+
     return (
         <main className="bg-amarelo-claro dark:bg-vinho-dois">
             <div className="flex justify-center items-center">
+            
                 <img src={mito} alt="bolsoMito" className="bg-black w-full h-50"/>
             </div>
 
             <div className="font-familjen flex justify-center align-center p-6 text-vermelho bg-amarelo font-bold dark:bg-vinho-um dark:text-amarelo">
                 <nav className="space-x-25 text-xl ">
                     <button >
-                      <Link to='/projeto' className="txt-links"> Projeto </Link>
+                      <a href="#projeto" className="txt-links">Projeto</a>
                     </button>
                     <button>
                         <Link to='/produto' className="txt-links"> Produto </Link>
@@ -93,22 +96,23 @@ export function Home () {
                 <p className="p-8">Seu diferencial será uma agenda para anotar os remédios que ja foram disponibilizados no devido dia, com uma tela LCD para executar essa função.</p>
             </div>
 
+            <div id="projeto">
             <h1 className="font-erica text-vermelho text-8xl flex justify-center mt-15 dark:text-amarelo">Nosso App</h1>
+            </div>
             <div className="flex justify-center">
             <iframe className="rounded-3xl mt-5"
                 width="600" 
                 height="345" 
                 src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP" 
                 title="YouTube video player" 
-                frameborder="0" 
                 allow="accelerometer; 
                 autoplay; 
                 clipboard-write; 
                 encrypted-media; 
                 gyroscope; 
                 picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
             >
             </iframe>
 

@@ -4,6 +4,7 @@
 
 @theme {
     --color-vermelho: #B22C23;
+    --color-vermelho-claro: #B3453D;
     --color-vinho-um: #720C0C;
     --color-vinho-dois: #430202;
     --color-amarelo: #F7DE85;
@@ -13,13 +14,12 @@
     --font-familjen: "Familjen Grotesk", sans-serif;
 }
 
-
 .bt-header {
-    @apply h-20 hover:h-18 duration-150 ease-in cursor-pointer;
+    @apply h-20 hover:h-18 duration-400 ease-in-out cursor-pointer;
 }
 
 .txt-links {
-    @apply transition duration-300 hover:text-vinho-dois;
+    @apply transition duration-500 hover:text-vinho-dois dark:hover:text-white hover:font-bold;
 }
 
 .cartao-ft {
@@ -27,7 +27,7 @@
 }
 
 .txt-sobrenos {
-    @apply font-black flex justify-center text-3xl text-vermelho mt-3 dark:text-amarelo;    
+    @apply font-black flex justify-center text-3xl text-vermelho mt-3 dark:text-amarelo;
 }
 
 .fotos-padrao {
@@ -43,11 +43,11 @@
 }
 
 .cartao-produto {
-    @apply flex items-center w-140 h-40 mt-8 ml-10 font-familjen font-semibold rounded-l-lg;
+    @apply flex items-center justify-center h-40 mt-8 ml-10 font-familjen font-semibold rounded-l-lg;
 }
 
 .cartao-produto-ul {
-    @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left dark:bg-vermelho dark:text-amarelo;
+    @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left dark:bg-vermelho dark:text-amarelo mr-10;
 }
 
 .p-jogo {
@@ -56,4 +56,40 @@
 
 .refs {
     @apply flex items-center justify-start text-6xl font-erica italic text-vermelho underline m-5 ml-30 dark:text-amarelo;
+}
+
+.cartão-config {
+    @apply  bg-vinho-um italic text-white text-3xl h-300 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl dark:text-vermelho dark:bg-amarelo;
+}
+
+.info-config {
+    @apply text-white dark:text-amarelo font-erica text-xl ml-10;
+}
+
+.txt-config {
+    @apply text-white dark:text-amarelo font-familjen text-xl ml-10;
+}
+
+.p-config {
+    @apply font-familjen text-vermelho font-bold text-xl;
+}
+
+.input-config {
+    @apply transition duration-300 bg-vermelho-claro text-white w-130 h-14 rounded-xl text-center font-familjen mb-10 hover:bg-vermelho border-none text-left p-5 outline-none;
+}
+
+.bt-config1 {
+    @apply bg-vinho-dois dark:bg-vinho-um dark:text-amarelo w-100 h-14 mb-10 text-white font-familjen rounded-2xl text-xl; 
+}
+
+.bt-config2 {
+    @apply bg-vermelho w-100 h-14 mb-10 text-white font-familjen rounded-2xl text-xl; 
+}
+
+.p-tuto {
+    @apply bg-amarelo italic text-vermelho text-3xl h-100 m-10 p-10 mb-1 flex items-center font-semibold shadow-lg rounded-4xl dark:text-amarelo dark:bg-vermelho;
+}
+
+.hr-config {
+    @apply border-3 border-white dark:border-vinho-dois m-5 mx-0;
 }
