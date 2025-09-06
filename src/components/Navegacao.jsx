@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import { Scroll } from "./Scroll.jsx"
 
 export function Navegacao (){
     return(
@@ -6,7 +7,7 @@ export function Navegacao (){
             <div className="font-familjen flex justify-center align-center p-6 text-vermelho dark:text-amarelo">
                 <nav className="space-x-25 text-xl ">
                     <button >
-                      <Link to='/projeto' className="txt-links"> Projeto </Link>
+                      <Link to='/' className="txt-links"> Projeto </Link>
                     </button>
                     <button>
                         <Link to='/produto' className="txt-links"> Produto </Link>

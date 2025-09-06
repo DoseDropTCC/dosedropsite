@@ -8,18 +8,20 @@ export function Referencias() {
             <Navegacao />
             <section className="flex">
             <div className="w-1/2 mt-15">
-                <h1 className="font-erica text-vinho-um text-8xl flex justify-center mt-15 mb-10 dark:text-amarelo" >REFERÊNCIAS</h1>
-                <nav>
+                <h1 className="font-erica text-vinho-um text-7xl flex justify-center mt-15 mb-10 dark:text-amarelo" >REFERÊNCIAS</h1>
+                <nav className="refs">
                     <ul className="refs">
-                        <li>REFERÊNCIA #1</li>
+                        <li className="refs-h1">REFERÊNCIA #1</li>
+                        <li className="refs-p">TITULO DO ARTIGO REF 1</li>
                     </ul>
                     <ul className="refs">
-                        <li>REFERÊNCIA #2</li>
+                        <li className="refs-h1">REFERÊNCIA #2</li>
+                        <li className="refs-p">TITULO DO ARTIGO REF 2</li>
                     </ul>
-                    <ul className="refs">
+                    <ul className="refs-h1">
                         <li>REFERÊNCIA #3</li>
                     </ul>
-                    <ul className="refs">
+                    <ul className="refs-h1">
                         <li>REFERÊNCIA #4</li>
                     </ul>
                 </nav>

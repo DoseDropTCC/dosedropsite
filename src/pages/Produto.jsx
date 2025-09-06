@@ -24,7 +24,7 @@ export function Produto() {
                             <li>Tower Pro</li>
                             <li>Valor: R$ 67,90</li>
                         </ul>
-                        <img src={passoMotor} alt="Imagem do Passo Motor" className='rounded-full size-40'/>
+                        <img src={passoMotor} alt="Imagem do Passo Motor" className='ft-cartao-produto'/>
                     </div>
 
                     <div className="cartao-produto">
@@ -33,7 +33,7 @@ export function Produto() {
                             <li>Bluetooth 38 pinos</li>
                             <li>Valor: R$ 69,90</li>
                         </ul>
-                        <img src={esp} alt="Imagem do Esp 32" className='rounded-full size-40'/>
+                        <img src={esp} alt="Imagem do Esp 32" className='ft-cartao-produto'/>
                     </div>
 
                     <div className="cartao-produto">
@@ -42,7 +42,7 @@ export function Produto() {
                             <li>2-5,5V</li>
                             <li>Valor: R$ 5,90</li>
                         </ul>
-                        <img src={sensorToque} alt="Imagem do Esp 32" className='rounded-full size-40'/>
+                        <img src={sensorToque} alt="Imagem do Esp 32" className='ft-cartao-produto'/>
                     </div>
 
                     <div className="cartao-produto">
@@ -51,7 +51,7 @@ export function Produto() {
                             <li>3,5 - 5V</li>
                             <li>Valor: R$ 2,50</li>
                         </ul>
-                        <img src={buzzer} alt="Imagem do Esp 32" className='rounded-full size-40'/>
+                        <img src={buzzer} alt="Imagem do Esp 32" className='ft-cartao-produto'/>
                     </div>
 
                     <div className="cartao-produto">
@@ -60,7 +60,7 @@ export function Produto() {
                             <li>240x320</li>
                             <li>Valor: R$ 52.85</li>
                         </ul>
-                        <img src={display} alt="Imagem do Esp 32" className='rounded-full size-40'/>
+                        <img src={display} alt="Imagem do Esp 32" className='ft-cartao-produto'/>
                     </div>
 
                     <div className="cartao-produto">
@@ -69,7 +69,7 @@ export function Produto() {
                             <li>1,75mm 1Kg</li>
                             <li>Valor: R$ 177,69</li>
                         </ul>
-                        <img src={filamento} alt="Imagem do Esp 32" className='rounded-full size-40 bg-white'/>
+                        <img src={filamento} alt="Imagem do Esp 32" className='ft-cartao-produto'/>
                     </div>
                 </div>
                 <div>
@@ -93,9 +93,9 @@ export function Produto() {
                         </iframe>
                     </div>
                     <h2 className=" flex justify-center font-familjen text-vinho-um text-3xl mt-5 dark:text-amarelo">O projeto final custou R$305,76</h2>
-                    <hr className="border-5 border-white m-5 dark:border-amarelo" />
+                    <hr className="border-5 rounded-full border-vermelho m-5 dark:border-amarelo" />
                     <h2 className=" flex justify-center font-erica  text-vinho-um text-3xl mt-5 dark:text-amarelo">Resultado final:</h2>
-                    <img className="w-180 rounded-3xl mt-10" src={resultado} alt="Imagem do produto final" />
+                    <img className="w-180 rounded-3xl mt-10 mb-25" src={resultado} alt="Imagem do produto final" />
                 </div>
 
             </section>

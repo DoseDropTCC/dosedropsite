@@ -16,12 +16,10 @@ export function HeaderSite () {
     return (
         
         <header className='font-erica flex justify-center items-center bg-vinho-um'>
-                <nav>
-                    <a href="/"> <img src={doselogo} alt=" Dose Drop logo" className='font-erica rounded-3xl h-22 ml-10 m-5 bg-vermelho hover:h-20 hover:rounded-2xl duration-150 ease-in cursor-pointer'/></a>
-                </nav>
-                <nav>
-                    <a href="/"><h1 className='hover:text-amarelo-claro transition-colors duration-200 text-7xl cursor-pointer text-amarelo text-center ms-auto me-auto'>DoseDrop</h1>
-                    </a>
+                <nav className='flex items-center'>
+                    <a href="/"> <img src={doselogo} alt=" Dose Drop logo" className='font-erica rounded-3xl h-22 ml-10 m-5 bg-vermelho hover:h-20 duration-150 ease-in cursor-pointer'/></a>
+                    <a href="/"><h1 className='hover:text-amarelo-claro transition-colors duration-350 text-7xl cursor-pointer text-amarelo text-center ms-auto me-auto'>DoseDrop</h1>
+                    </a>    
                 </nav>
                 
             <nav className='flex p-5 mr-10'>

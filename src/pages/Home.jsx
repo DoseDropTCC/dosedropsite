@@ -11,6 +11,7 @@ import kawanL from "../assets/fotosLinkedin/kawanLinkedin.png"
 import renatoL from "../assets/fotosLinkedin/renatoLinkedin.png"
 import gustavoL from "../assets/fotosLinkedin/gustavoLinkedin.png"
 import gabrielL from "../assets/fotosLinkedin/gabrielLinkedin.png"
+import Popup from 'reactjs-popup'
 
 
 export function Home () {
@@ -87,7 +88,7 @@ export function Home () {
 
             <div className="cartao-ft">
                 <img src={dispenser} alt="dispenser" className="rounded-xl h-80 w-80" />
-                <p className="p-8">Uma caixa de remédios automática, para regular remédios para idosos, com o objetivo de orientar a hora certa de usar seus remédios.
+                <p className="p-8 ">Uma caixa de remédios automática, para regular remédios para idosos, com o objetivo de orientar a hora certa de usar seus remédios.
                 Também haverá despertadores caso o idoso não compareça para pegar seu remédio.</p>
             </div>
 
@@ -118,7 +119,7 @@ export function Home () {
 
             </div>
             <nav className="mt-10 flex justify-center text-xl">
-                <a href="https://youtu.be/eSRgRVx9ZjQ?si=fhzOWhVypZA9-qXp" className="underline text-vermelho bg-amarelo p-5 font-familjen dark:bg-vermelho dark:text-amarelo">CLIQUE AQUI PARA ACESSAR O NOSSO APP</a>
+                <a href="https://youtu.be/eSRgRVx9ZjQ?si=fhzOWhVypZA9-qXp" className="ease-in-out duration-300 underline text-vermelho bg-amarelo p-5 font-familjen dark:bg-vermelho dark:text-amarelo hover:bg-vinho-um hover:text-amarelo shadow-2xl">CLIQUE AQUI PARA ACESSAR O NOSSO APP</a>
             </nav>
 
             <div>

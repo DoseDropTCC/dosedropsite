@@ -23,7 +23,7 @@
 }
 
 .cartao-ft {
-    @apply font-familjen flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
+    @apply font-familjen flex items-center  bg-amarelo w-250  rounded-2xl text-vermelho text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
 }
 
 .txt-sobrenos {
@@ -46,6 +46,10 @@
     @apply flex items-center justify-center h-40 mt-8 ml-10 font-familjen font-semibold rounded-l-lg;
 }
 
+.ft-cartao-produto {
+    @apply size-35 bg-white rounded-full;
+}
+
 .cartao-produto-ul {
     @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left dark:bg-vermelho dark:text-amarelo mr-10;
 }
@@ -55,7 +59,15 @@
 }
 
 .refs {
-    @apply flex items-center justify-start text-6xl font-erica italic text-vermelho underline m-5 ml-30 dark:text-amarelo;
+    @apply items-center justify-start  text-vermelho underline m-5  dark:text-amarelo;
+}
+
+.refs-h1 {
+    @apply text-6xl font-erica;
+}
+
+.refs-p {
+    @apply text-xl italic font-familjen;
 }
 
 .cartão-config {
@@ -71,11 +83,11 @@
 }
 
 .p-config {
-    @apply font-familjen text-vermelho font-bold text-xl;
+    @apply font-familjen text-vermelho font-bold text-xl dark:text-amarelo;
 }
 
 .input-config {
-    @apply transition duration-300 bg-vermelho-claro text-white w-130 h-14 rounded-xl text-center font-familjen mb-10 hover:bg-vermelho border-none text-left p-5 outline-none;
+    @apply transition duration-300 bg-vermelho-claro text-white w-130 h-14 rounded-xl font-familjen mb-10 hover:bg-vermelho border-none text-left p-5 outline-none;
 }
 
 .bt-config1 {

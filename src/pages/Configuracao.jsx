@@ -31,7 +31,7 @@ export function Configuracao() {
                 <div className="bg-vinho-um italic h-auto w-100 dark:bg-vinho-um">
                     
                     <div className="flex p-5 w-40">
-                        <img src={neyma} alt="neyma" className="rounded-3xl size-25 mt-5 border-2 border-white flex items-center"/>
+                        <img src={neyma} alt="neyma" className="rounded-3xl size-25 mt-5 border-2 border-white flex items-center hover:size-22 ease-in-out duration-300"/>
                         <ul className="m-auto">
                             <li className="info-config">Nome:</li>
                             <li className="txt-config">NEYMA</li>

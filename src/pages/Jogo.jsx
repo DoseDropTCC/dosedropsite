@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+
 import { Navegacao } from "../components/Navegacao"
 
 export function Jogo() {
@@ -10,7 +11,7 @@ export function Jogo() {
                 <div className="flex p-5">
                 <div  className="w-1/2">
                     <div>
-                        <h2 className="flex justify-center font-erica  text-vinho-um text-6xl dark:text-amarelo">Elderies VS Medicines</h2>
+                        <h2 className="flex justify-center items-center mx-10 font-erica  text-vinho-um text-6xl dark:text-amarelo">Elderies VS Medicines</h2>
 
                         <p className="p-jogo">Elderies VS Medicine será o nosso jogo, no estilo tower defense inspirado no Plants VS Zombies, jogo que popularizou os tower defenses.</p>
                         <p className="p-jogo">O objetivo sera defender sua base dos idosos, com medicamentos que possuem mecânicas únicas com o objetivo principal de curar idosos.</p>

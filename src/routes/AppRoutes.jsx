@@ -8,6 +8,7 @@ import { Tuto } from "../pages/Tuto"
 import { HeaderSite } from "../components/HeaderSite"
 import { Configuracao } from "../pages/Configuracao"
 
+
 export function AppRoutes() {
     return(
         <Routes>
