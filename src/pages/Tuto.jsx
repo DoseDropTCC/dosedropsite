@@ -7,8 +7,8 @@ export function Tuto () {
          <section>
            <div>
               <Navegacao />
-                <h1 className="font-erica text-vinho-um text-7xl flex justify-center mt-10 mb-1 dark:text-amarelo">Como utilizar o Dose Drop</h1>
-                  <div className="flex items-center justify-center h-screen">
+                <h1 className="font-erica text-vinho-um text-7xl flex justify-center mt-10 mb-20 dark:text-amarelo">Como utilizar o Dose Drop</h1>
+                  <div className="flex items-center justify-center h-screen mb-20">
                     <iframe
                     src="https://www.youtube.com/embed/xxxxxxx"
                     className="w-[750px] h-[500px] rounded-2xl shadow-lg border-4 mb-50 border-vinho-um  "></iframe>

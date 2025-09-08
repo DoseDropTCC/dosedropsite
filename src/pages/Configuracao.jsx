@@ -13,7 +13,6 @@ export function Configuracao() {
 
     const handleClickOlho1On = () => {
         setClickOlho1((prev) => !prev);
-        
     };
 
     const handleClickOlho2On = () => {
