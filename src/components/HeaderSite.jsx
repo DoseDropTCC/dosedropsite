@@ -19,10 +19,10 @@ export function HeaderSite () {
     return (
         <header className='font-erica flex justify-between items-center bg-vinho-um h-35 w-220 md:w-full'>
                 <nav className='flex items-center'>
-                    <a href="/"> <img src={doselogom} alt="Dose Drop Logo Mobile" className='block md:hidden h-35 w-35'/> </a>
+                    <a href="/"> <img src={doselogom} alt="Dose Drop Logo Mobile" className='block md:hidden h-35 w-35' /> </a>
                     <a href="/"> <img src={doselogo} alt=" Dose Drop logo" className='hidden md:block font-erica md:rounded-3xl h-25 rounded-xl md:h-22 md:ml-10 m-5 hover:size-20 duration-150 ease-in cursor-pointer'/></a>
-                    <a href="/"><h1 className='hover:text-amarelo-claro  transition-colors duration-350 text-7xl ml-20 md:ml-80 cursor-pointer text-amarelo'>DoseDrop</h1>
-                    </a>    
+                    <a href="/"><h1 className='hover:text-amarelo-claro  transition-colors duration-350 text-7xl ml-20 md:ml-80 cursor-pointer text-amarelo' onClick={() => setOpen(!open)}>DoseDrop</h1>
+                    </a>
                 </nav>
                 
             <nav className='flex p-5 mr-10'>

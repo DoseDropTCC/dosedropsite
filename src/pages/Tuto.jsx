@@ -3,11 +3,11 @@ import { Navegacao } from "../components/Navegacao"
 
 export function Tuto () {
     return(
-        <main className="bg-amarelo-claro dark:bg-vinho-dois">
+        <main className="bg-amarelo-claro dark:bg-vinho-dois min-w-220">
          <section>
            <div>
               <Navegacao />
-                <h1 className="font-erica text-vinho-um text-7xl flex justify-center mt-10 mb-20 dark:text-amarelo">Como utilizar o Dose Drop</h1>
+                <h1 className="font-erica text-vinho-um text-6xl md:text-7xl flex justify-center text-center mt-5 md:mx-3 md:mt-10 mb-20 dark:text-amarelo">Como utilizar o Dose Drop</h1>
                   <div className="flex items-center justify-center h-screen mb-20">
                     <iframe
                     src="https://www.youtube.com/embed/xxxxxxx"
