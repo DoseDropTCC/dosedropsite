@@ -1,6 +1,11 @@
-import React, {useContext, useState} from "react"
+import React, {useContext, useState} from "react" 
 import { Link } from "react-router"
 import mito from "../assets/mito.jpg"
+import mito2 from "../assets/mito2.jpg"
+import mito3 from "../assets/mito3.jpg"
+import mito4 from "../assets/mito4.jpg"
+import setaD from "../assets/setaDireita.png"
+import setaE from "../assets/setaEsquerda.png"
 import dispenser from "../assets/dispenser.png"
 import kawan from "../assets/criadores/kawanfoto.jpg"
 import renato from "../assets/criadores/renataofoto.jpg"
@@ -20,50 +25,50 @@ export function Home () {
     const [mouseGustavo, setMouseGustavo] = useState(false);
     const [mouseGabriel, setMouseGabriel] = useState(false);
 
-    const handleMouseDentroKawan = () => {
-        setMouseKawan(true);
-      };
+    const handleMouseDentroKawan = () => { setMouseKawan(true); };
+    const handleMouseForaKawan = () => { setMouseKawan(false); };
+    const handleMouseDentroRenato = () => { setMouseRenato(true); };
+    const handleMouseForaRenato = () => { setMouseRenato(false); };
+    const handleMouseDentroGustavo = () => { setMouseGustavo(true); };
+    const handleMouseForaGustavo = () => { setMouseGustavo(false); };
+    const handleMouseDentroGabriel = () => { setMouseGabriel(true); };
+    const handleMouseForaGabriel = () => { setMouseGabriel(false); };
+
+    const kawanfoto = mouseKawan ? kawanL : kawan;
+    const renatofoto = mouseRenato ? renatoL : renato;
+    const gustavofoto = mouseGustavo ? gustavoL : gustavo;
+    const gabrielfoto = mouseGabriel ? gabrielL : gabriel;
     
-      const handleMouseForaKawan = () => {
-        setMouseKawan(false);
-      };
+    const mitos = [mito, mito2, mito3, mito4];
+    const [indiceAtual, setIndiceAtual] = useState(0);
 
-      const handleMouseDentroRenato = () => {
-        setMouseRenato(true);
-      };
-    
-      const handleMouseForaRenato = () => {
-        setMouseRenato(false);
-      };
+    const proximoMito = () => {
+      setIndiceAtual((prev) => (prev + 1) % mitos.length);
+    };
 
-      const handleMouseDentroGustavo = () => {
-        setMouseGustavo(true);
-      };
-    
-      const handleMouseForaGustavo = () => {
-        setMouseGustavo(false);
-      };
-
-      const handleMouseDentroGabriel = () => {
-        setMouseGabriel(true);
-      };
-    
-      const handleMouseForaGabriel = () => {
-        setMouseGabriel(false);
-      };
-
-      const kawanfoto = mouseKawan ? kawanL : kawan;
-      const renatofoto = mouseRenato ? renatoL : renato;
-      const gustavofoto = mouseGustavo ? gustavoL : gustavo;
-      const gabrielfoto = mouseGabriel ? gabrielL : gabriel;
-
+    const anteriorMito = () => {
+      setIndiceAtual((prev) => (prev - 1 + mitos.length) % mitos.length);
+    };
 
 
     return (
         <main className="bg-amarelo-claro dark:bg-vinho-dois">
-            <div className="flex justify-center items-center">
-            
-                <img src={mito} alt="bolsoMito" className="bg-black w-full h-50"/>
+
+
+            <div className="relative flex justify-center items-center">
+                <button onClick={anteriorMito} className="absolute left-5 z-10">
+                    <img src={setaE} alt="Anterior" className="w-10 h-10"/>
+                </button>
+
+                <img 
+                    src={mitos[indiceAtual]} 
+                    alt={`Mito ${indiceAtual+1}`} 
+                    className="bg-black w-full h-50 transition-all duration-500"
+                />
+
+                <button onClick={proximoMito} className="absolute right-5 z-10">
+                    <img src={setaD} alt="Próximo" className="w-10 h-10"/>
+                </button>
             </div>
 
             <div className="font-familjen flex justify-center align-center p-6 text-vermelho bg-amarelo font-bold dark:bg-vinho-um dark:text-amarelo">
