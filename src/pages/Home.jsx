@@ -49,15 +49,14 @@ export function Home () {
     const anteriorMito = () => {
       setIndiceAtual((prev) => (prev - 1 + mitos.length) % mitos.length);
     };
-
+    
 
     return (
-        <main className="bg-amarelo-claro dark:bg-vinho-dois">
-
+        <main className="bg-amarelo-claro dark:bg-vinho-dois w-220 md:w-full ">
             
-            <div className="relative flex justify-center items-center overflow-hidden">
+            <div className="relative flex justify-center items-center ">
                 <button onClick={anteriorMito} className="absolute left-5 z-10">
-                    <img src={setaE} alt="Anterior" className="w-10 h-10"/>
+                    <img src={setaE} alt="Anterior" className="w-20 h-20 shadow-2xl"/>
                 </button>
 
                 <div className="w-full h-50 flex justify-center items-center">
@@ -70,11 +69,11 @@ export function Home () {
                 </div>
 
                 <button onClick={proximoMito} className="absolute right-5 z-10">
-                    <img src={setaD} alt="Próximo" className="w-10 h-10"/>
+                    <img src={setaD} alt="Próximo" className="w-20 h-20 shadow-xl"/>
                 </button>
             </div>
 
-            <div className="font-familjen flex justify-center align-center p-6 text-vermelho bg-amarelo font-bold dark:bg-vinho-um dark:text-amarelo">
+            <div className=" hidden md:font-familjen md:flex justify-center md:align-center md:p-6 md:text-vermelho md:bg-amarelo md:font-bold md:dark:bg-vinho-um md:dark:text-amarelo">
                 <nav className="space-x-25 text-xl ">
                     <button >
                       <a href="#projeto" className="txt-links">Projeto</a>
@@ -95,13 +94,13 @@ export function Home () {
             </div>
 
             <div className="cartao-ft">
-                <img src={dispenser} alt="dispenser" className="rounded-xl h-80 w-80" />
+                <img src={dispenser} alt="dispenser" className="ft-dispenser" />
                 <p className="p-8 ">Uma caixa de remédios automática, para regular remédios para idosos, com o objetivo de orientar a hora certa de usar seus remédios.
                 Também haverá despertadores caso o idoso não compareça para pegar seu remédio.</p>
             </div>
 
             <div className="cartao-ft">
-                <img src={dispenser} alt="dispenser" className="rounded-xl h-80 w-80" />
+                <img src={dispenser} alt="dispenser" className="ft-dispenser" />
                 <p className="p-8">Seu diferencial será uma agenda para anotar os remédios que ja foram disponibilizados no devido dia, com uma tela LCD para executar essa função.</p>
             </div>
 
@@ -133,7 +132,7 @@ export function Home () {
             <div>
               <h1 className="font-erica text-vermelho text-8xl flex justify-center mt-15 dark:text-amarelo">Sobre Nós</h1>
 
-              <div className="p-20 flex justify-between ">
+              <div className="p-20 md:flex md:justify-between ">
                 <div>
                   <img className="fotos-padrao transition-all duration-300" src={kawanfoto} onMouseEnter={handleMouseDentroKawan} onMouseLeave={handleMouseForaKawan} alt="Imagem Kawan"/>
                   <p className="txt-sobrenos">Kawan</p>

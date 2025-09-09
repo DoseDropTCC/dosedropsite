@@ -2,9 +2,10 @@ import { Link } from "react-router"
 import { Scroll } from "./Scroll.jsx"
 
 export function Navegacao (){
+    
     return(
         <div>
-            <div className="font-familjen flex justify-center align-center p-6 text-vermelho dark:text-amarelo">
+            <div className="hidden md:flex font-familjen justify-center align-center p-6 text-vermelho dark:text-amarelo">
                 <nav className="space-x-25 text-xl ">
                     <button >
                       <Link to='/' className="txt-links"> Projeto </Link>

@@ -5,13 +5,13 @@ import gmail from "../assets/redes/gmail.png"
 
 export function FooterSite() {
     return (
-        <div className=" bg-vinho-um p-5 grid font-familjen ">
+        <div className=" bg-vinho-um p-5 md:grid font-familjen ">
             <div className="flex justify-center p-5 gap-2">
                 <p className=" mt-5 text-amarelo text-4xl">Clique na estrela para avaliar-nos!</p>
-                <img c src={estrela} alt="Ícone de estrela" className="mt-4 inline-block align-middle w-10"/>
+                <img c src={estrela} alt="Ícone de estrela" className="mt-4 inline-block align-middle items-center w-10"/>
             </div>
 
-            <div className="flex justify-center gap-15">
+            <div className=" block md:flex md:justify-center gap-15">
                 <div className="footer-contatos">
                     <img src={insta} alt="Logo do Instagram" className="bt-header "/>
                     <p className="footer-contatos-txt">@dose_drop</p>
@@ -28,7 +28,7 @@ export function FooterSite() {
                 </div>
             </div>
 
-            <p className="text-amarelo flex justify-center mt-12 text-2xl">dose_drop - Todos os direitos reservados © 2024 - 2025</p>
+            <p className="text-amarelo flex justify-center mt-12 text-3xl md:text-2xl">dose_drop - Todos os direitos reservados © 2024 - 2025</p>
         </div>
     )
 }

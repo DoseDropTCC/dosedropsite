@@ -33,23 +33,27 @@
 }
 
 .cartao-ft {
-    @apply font-familjen flex items-center  bg-amarelo w-250  rounded-2xl text-vermelho text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
+    @apply font-familjen md:flex md:items-center bg-amarelo w-150 rounded-t-xl md:w-250 rounded-xl md:rounded-2xl text-vermelho text-2xl md:text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
+}
+
+.ft-dispenser {
+    @apply rounded-t-xl p-0 md:rounded-2xl h-55 w-full  md:h-80 md:w-80;
 }
 
 .txt-sobrenos {
-    @apply font-black flex justify-center text-3xl text-vermelho mt-3 dark:text-amarelo;
+    @apply font-black flex justify-center text-center text-5xl mb-8 md:text-3xl text-vermelho mt-3 dark:text-amarelo;
 }
 
 .fotos-padrao {
-    @apply size-60 rounded-3xl;
+    @apply flex ml-50 md:ml-0 size-80 md:size-60 rounded-3xl;
 }
 
 .footer-contatos {
-    @apply flex items-center p-2 mt-6;
+    @apply flex items-center p-2 mt-6 justify-center;
 }
 
 .footer-contatos-txt {
-    @apply flex justify-center text-2xl  text-amarelo text-center;
+    @apply flex justify-center text-2xl text-amarelo text-center md:ml-5;
 }
 
 .cartao-produto {
@@ -57,7 +61,7 @@
 }
 
 .ft-cartao-produto {
-    @apply size-35 bg-white rounded-full;
+    @apply size-35 bg-white rounded-full ;
 }
 
 .cartao-produto-ul {
