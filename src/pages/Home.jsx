@@ -38,7 +38,7 @@ export function Home () {
     const renatofoto = mouseRenato ? renatoL : renato;
     const gustavofoto = mouseGustavo ? gustavoL : gustavo;
     const gabrielfoto = mouseGabriel ? gabrielL : gabriel;
-    
+
     const mitos = [mito, mito2, mito3, mito4];
     const [indiceAtual, setIndiceAtual] = useState(0);
 
@@ -54,17 +54,20 @@ export function Home () {
     return (
         <main className="bg-amarelo-claro dark:bg-vinho-dois">
 
-
-            <div className="relative flex justify-center items-center">
+            
+            <div className="relative flex justify-center items-center overflow-hidden">
                 <button onClick={anteriorMito} className="absolute left-5 z-10">
                     <img src={setaE} alt="Anterior" className="w-10 h-10"/>
                 </button>
 
-                <img 
-                    src={mitos[indiceAtual]} 
-                    alt={`Mito ${indiceAtual+1}`} 
-                    className="bg-black w-full h-50 transition-all duration-500"
-                />
+                <div className="w-full h-50 flex justify-center items-center">
+                    <img 
+                        key={indiceAtual} 
+                        src={mitos[indiceAtual]} 
+                        alt={`Mito ${indiceAtual+1}`} 
+                        className="bg-black w-full h-50 opacity-0 animate-fadeIn"
+                    />
+                </div>
 
                 <button onClick={proximoMito} className="absolute right-5 z-10">
                     <img src={setaD} alt="Próximo" className="w-10 h-10"/>
