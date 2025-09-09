@@ -38,10 +38,10 @@ export function Itens() {
           />
         </div>
         <div>
-          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
-          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
-          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
-          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
+          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
+          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
         </div>
 
         <div>
@@ -58,10 +58,10 @@ export function Itens() {
         </div>
 
         <div>
-          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
-          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
-          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
-          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
+          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
+          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
         </div>
 
         <div>
@@ -74,10 +74,10 @@ export function Itens() {
         </div>
 
         <div>
-          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
-          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
-          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
-          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
+          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
+          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
         </div>
 
         <div> 
@@ -90,10 +90,10 @@ export function Itens() {
         </div>
 
         <div>
-          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
-          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
-          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
-          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
+          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
+          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
         </div>
 
         <div> 
@@ -106,10 +106,10 @@ export function Itens() {
         </div>
 
         <div>
-          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
-          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
-          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
-          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
+          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
+          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
         </div>
 
         <div> 
@@ -122,10 +122,10 @@ export function Itens() {
         </div>
 
         <div>
-          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
-          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
-          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
-          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lapisA} alt="icone lápis amarelo" className="rounded-2xl size-30 ml-260 -mt-35 hidden dark:block"/>
+          <img src={lapisV} alt="icone lápis vermelho" className="rounded-2xl size-30 ml-260 -mt-35 dark:hidden"/>
+          <img src={lixeiraA} alt="icone lixeira amarela" className="rounded-2xl size-30 ml-290 -mt-30 hidden dark:block"/>
+          <img src={lixeiraV} alt="icone lixeira vermelha" className="rounded-2xl size-30 ml-290 -mt-30 dark:hidden"/>
         </div>
 
         <div>
