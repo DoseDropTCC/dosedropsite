@@ -7,6 +7,7 @@ import { Itens } from "../pages/Itens"
 import { Tuto } from "../pages/Tuto"
 import { HeaderSite } from "../components/HeaderSite"
 import { Configuracao } from "../pages/Configuracao"
+import { Menu }  from "../pages/Menu"
 
 
 export function AppRoutes() {
@@ -20,6 +21,7 @@ export function AppRoutes() {
             <Route path="/itens" element={<Itens />}/>
             <Route path="/tuto" element={<Tuto />}/>
             <Route path="/configuracao" element={<Configuracao />}/>
+            <Route path="/menu" element={<Menu />}/>
         </Routes>
     )
 }

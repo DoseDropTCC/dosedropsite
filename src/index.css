@@ -1,121 +1,161 @@
 @import "tailwindcss";
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  .animate-fadeIn {
-    animation: fadeIn 0.5s ease-in-out;
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 1;
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-vermelho: #B22C23;
-    --color-vermelho-claro: #B3453D;
-    --color-vinho-um: #720C0C;
-    --color-vinho-dois: #430202;
-    --color-amarelo: #F7DE85;
-    --color-amarelo-claro: #FFFBEA;
+  --color-vermelho: #B22C23;
+  --color-vermelho-claro: #B3453D;
+  --color-vinho-um: #720C0C;
+  --color-vinho-dois: #430202;
+  --color-amarelo: #F7DE85;
+  --color-amarelo-claro: #FFFBEA;
 
-    --font-erica: 'erica one', sans serif;
-    --font-familjen: "Familjen Grotesk", sans-serif;
+  --font-erica: 'erica one', sans serif;
+  --font-familjen: "Familjen Grotesk", sans-serif;
 }
 
+/* -------------------- BOTÕES -------------------- */
 .bt-header {
-    @apply h-20 hover:h-18 duration-400 ease-in-out cursor-pointer;
+  @apply h-20 hover:h-18 duration-400 ease-in-out cursor-pointer;
 }
 
+/* -------------------- LINKS -------------------- */
 .txt-links {
-    @apply transition duration-500 hover:text-vinho-dois dark:hover:text-white hover:font-bold;
+  @apply transition duration-500 hover:text-vinho-dois 
+         dark:hover:text-white hover:font-bold;
 }
 
+/* -------------------- CARTÕES -------------------- */
 .cartao-ft {
-    @apply font-familjen md:flex md:items-center bg-amarelo w-150 rounded-t-xl md:w-250 rounded-xl md:rounded-2xl text-vermelho text-2xl md:text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
+  @apply font-familjen bg-amarelo w-150 rounded-xl text-vermelho text-2xl 
+         m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
+
+  @apply md:flex md:items-center md:w-250 md:rounded-2xl md:text-3xl;
 }
 
 .ft-dispenser {
-    @apply rounded-t-xl p-0 md:rounded-2xl h-55 w-full  md:h-80 md:w-80;
-}
-
-.txt-sobrenos {
-    @apply font-black flex justify-center text-center text-5xl mb-8 md:text-3xl text-vermelho mt-3 dark:text-amarelo;
-}
-
-.fotos-padrao {
-    @apply flex ml-50 md:ml-0 size-80 md:size-60 rounded-3xl;
-}
-
-.footer-contatos {
-    @apply flex items-center p-2 mt-6 justify-center;
-}
-
-.footer-contatos-txt {
-    @apply flex justify-center text-2xl text-amarelo text-center md:ml-5;
+  @apply rounded-t-xl p-0 h-55 w-full 
+         md:rounded-2xl md:h-80 md:w-80;
 }
 
 .cartao-produto {
-    @apply flex items-center justify-center h-40 mt-8 ml-10 font-familjen font-semibold rounded-l-lg;
+  @apply flex flex-col items-center justify-center mt-8 px-4 
+         font-familjen font-semibold rounded-lg gap-4;
+
+  @apply md:flex-row md:h-40 md:w-auto md:px-0;
 }
 
 .ft-cartao-produto {
-    @apply size-35 bg-white rounded-full ;
+  @apply w-full max-w-[160px] object-contain md:ml-5;
 }
 
 .cartao-produto-ul {
-    @apply p-5 bg-amarelo text-vermelho text-xl w-110 text-left dark:bg-vermelho dark:text-amarelo mr-10;
+  @apply p-4 bg-amarelo text-vermelho text-base w-full text-left 
+         dark:bg-vermelho dark:text-amarelo;
+
+  @apply md:text-xl md:w-110;
+}
+
+/* -------------------- TEXTOS -------------------- */
+.txt-sobrenos {
+  @apply font-black flex justify-center text-center text-5xl mb-8 
+         text-vermelho mt-3 dark:text-amarelo;
+
+  @apply md:text-3xl;
 }
 
 .p-jogo {
-    @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl dark:text-amarelo dark:bg-vermelho;
+  @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 
+         flex items-center font-semibold shadow-lg rounded-2xl 
+         dark:text-amarelo dark:bg-vermelho;
+
+  @apply md:h-auto md:text-2xl;
 }
 
 .refs {
-    @apply items-center justify-start  text-vermelho underline m-5  dark:text-amarelo;
+  @apply items-center justify-start text-vermelho underline m-5 
+         dark:text-amarelo;
 }
 
 .refs-h1 {
-    @apply text-6xl font-erica;
+  @apply text-6xl font-erica md:text-4xl;
 }
 
 .refs-p {
-    @apply text-xl italic font-familjen;
+  @apply text-xl italic font-familjen md:text-lg;
 }
 
+/* -------------------- CONFIG -------------------- */
 .cartão-config {
-    @apply  bg-vinho-um italic text-white text-3xl h-300 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl dark:text-vermelho dark:bg-amarelo;
+  @apply bg-vinho-um italic text-white text-3xl h-300 m-5 p-5 
+         flex items-center font-semibold shadow-lg rounded-2xl 
+         dark:text-vermelho dark:bg-amarelo;
+
+  @apply md:h-auto md:text-2xl;
 }
 
 .info-config {
-    @apply text-white dark:text-amarelo font-erica text-xl ml-10;
+  @apply text-white dark:text-amarelo font-erica text-xl ml-10;
 }
 
 .txt-config {
-    @apply text-white dark:text-amarelo font-familjen text-xl ml-10;
+  @apply text-white dark:text-amarelo font-familjen text-xl ml-10;
 }
 
 .p-config {
-    @apply font-familjen text-vermelho font-bold text-xl dark:text-amarelo;
+  @apply font-familjen text-vermelho font-bold text-xl dark:text-amarelo;
 }
 
 .input-config {
-    @apply transition duration-300 bg-vermelho-claro text-white w-130 h-14 rounded-xl font-familjen mb-10 hover:bg-vermelho border-none text-left p-5 outline-none;
+  @apply transition duration-300 bg-vermelho-claro text-white w-130 h-14 
+         rounded-xl font-familjen mb-10 hover:bg-vermelho border-none 
+         text-left p-5 outline-none;
+
+  @apply md:w-150;
 }
 
 .bt-config1 {
-    @apply bg-vinho-dois dark:bg-vinho-um dark:text-amarelo w-100 h-14 mb-10 text-white font-familjen rounded-2xl text-xl; 
+  @apply bg-vinho-dois dark:bg-vinho-um dark:text-amarelo 
+         w-100 h-14 mb-10 text-white font-familjen rounded-2xl text-xl;
 }
 
 .bt-config2 {
-    @apply bg-vermelho w-100 h-14 mb-10 text-white font-familjen rounded-2xl text-xl; 
+  @apply bg-vermelho w-100 h-14 mb-10 text-white 
+         font-familjen rounded-2xl text-xl;
 }
 
 .p-tuto {
-    @apply bg-amarelo italic text-vermelho text-3xl h-100 m-10 p-10 mb-1 flex items-center font-semibold shadow-lg rounded-4xl dark:text-amarelo dark:bg-vermelho;
+  @apply bg-amarelo italic text-vermelho text-3xl h-100 m-10 p-10 mb-1 
+         flex items-center font-semibold shadow-lg rounded-4xl 
+         dark:text-amarelo dark:bg-vermelho;
+
+  @apply md:h-auto md:text-2xl;
 }
 
 .hr-config {
-    @apply border-3 border-white dark:border-vinho-dois m-5 mx-0;
+  @apply border-3 border-white dark:border-vinho-dois m-5 mx-0;
+}
+
+/* -------------------- FOTOS & FOOTER -------------------- */
+.fotos-padrao {
+  @apply flex size-80 rounded-3xl ml-50 
+         md:ml-0 md:size-60;
+}
+
+.footer-contatos {
+  @apply flex items-center p-2 mt-6 justify-center;
+}
+
+.footer-contatos-txt {
+  @apply flex justify-center text-2xl text-amarelo text-center md:ml-5;
 }

@@ -52,7 +52,7 @@ export function Home () {
     
 
     return (
-        <main className="bg-amarelo-claro dark:bg-vinho-dois w-220 md:w-full ">
+        <main className="bg-amarelo-claro dark:bg-vinho-dois w-130 md:w-full ">
             
             <div className="relative flex justify-center items-center ">
                 <button onClick={anteriorMito} className="absolute left-5 z-10">
@@ -134,23 +134,43 @@ export function Home () {
 
               <div className="p-20 md:flex md:justify-between ">
                 <div>
+                  <a href="https://www.linkedin.com/in/kawan-ribeiro-9013b9338" 
+                   target="_blank" rel="noopener noreferrer" 
+                   className="flex flex-col items-center"
+                  > 
                   <img className="fotos-padrao transition-all duration-300" src={kawanfoto} onMouseEnter={handleMouseDentroKawan} onMouseLeave={handleMouseForaKawan} alt="Imagem Kawan"/>
                   <p className="txt-sobrenos">Kawan</p>
+                  </a>
                 </div>
 
                 <div>
+                   <a href="https://www.linkedin.com/in/renato-fideliz-787b24338" 
+                   target="_blank" rel="noopener noreferrer" 
+                   className="flex flex-col items-center"
+                   > 
                   <img className="fotos-padrao" src={renatofoto} onMouseEnter={handleMouseDentroRenato} onMouseLeave={handleMouseForaRenato} alt="Imagem Renato"/>
                   <p className="txt-sobrenos">Renato</p>
+                   </a>
                 </div>
                 
                 <div>
+                    <a href="https://www.linkedin.com/in/gustavo-miranda-de-aguiar-485102339" 
+                     target="_blank" rel="noopener noreferrer" 
+                     className="flex flex-col items-center"
+                    > 
                     <img className="fotos-padrao" src={gustavofoto} onMouseEnter={handleMouseDentroGustavo} onMouseLeave={handleMouseForaGustavo} alt="Imagem Gustavo"/>
                     <p className="txt-sobrenos">Gustavo</p>
+                    </a>
                 </div>
 
                 <div>
+                  <a href="https://www.linkedin.com/in/gabriel-silva-oliveira-ab90bb339" 
+                  target="_blank" rel="noopener noreferrer" 
+                  className="flex flex-col items-center"
+                 >
                   <img className="fotos-padrao" src={gabrielfoto} onMouseEnter={handleMouseDentroGabriel} onMouseLeave={handleMouseForaGabriel} alt="Imagem Gabriel" />
                   <p className="txt-sobrenos">Gabriel</p>
+                  </a>
                 </div>
             </div>
            </div>
