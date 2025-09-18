@@ -5,12 +5,11 @@ export function Tuto() {
     <main className="bg-amarelo-claro dark:bg-vinho-dois min-h-screen">
       <Navegacao />
 
-      {/* Título */}
+      
       <h1 className="font-erica text-vinho-um text-4xl sm:text-6xl md:text-7xl flex justify-center text-center mt-6 md:mt-12 mb-12 px-4 dark:text-amarelo">
         Como utilizar o Dose Drop
       </h1>
-
-      {/* Vídeo tutorial */}
+ 
       <div className="flex justify-center mb-12 px-4">
         <div className="w-full max-w-4xl aspect-video rounded-xl md:rounded-2xl shadow-lg border-4 border-vinho-um overflow-hidden">
           <iframe
@@ -25,7 +24,6 @@ export function Tuto() {
         </div>
       </div>
 
-      {/* Texto explicativo */}
       <section className="bg-amarelo italic text-vermelho text-lg sm:text-xl md:text-2xl mx-auto max-w-2xl flex flex-col items-start font-semibold shadow-lg rounded-xl md:rounded-2xl dark:text-amarelo dark:bg-vermelho p-8 space-y-6 leading-relaxed">
         <p>
           Será possível programar horários específicos pelo aplicativo. No visor

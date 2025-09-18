@@ -83,17 +83,18 @@
 }
 
 .refs {
-  @apply items-center justify-start text-vermelho underline m-5 
-         dark:text-amarelo;
-}
-
+    @apply flex flex-col items-start text-vinho-um underline m-3 
+           dark:text-amarelo text-base md:text-lg;
+  }
+  
 .refs-h1 {
-  @apply text-6xl font-erica md:text-4xl;
-}
-
+    @apply text-2xl font-bold font-erica md:text-4xl;
+  }
+  
 .refs-p {
-  @apply text-xl italic font-familjen md:text-lg;
-}
+    @apply text-sm italic font-familjen md:text-lg;
+  }
+  
 
 /* -------------------- CONFIG -------------------- */
 .cartão-config {

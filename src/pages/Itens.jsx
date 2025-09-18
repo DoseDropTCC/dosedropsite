@@ -13,7 +13,6 @@ export function Itens() {
        <section>
             <Navegacao />
 
-            
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 mt-10 text-center md:text-left">
              <h1 className="font-erica text-vermelho text-3xl sm:text-5xl md:text-7xl dark:text-amarelo">
                Itens Cadastrados

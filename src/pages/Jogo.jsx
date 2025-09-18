@@ -3,16 +3,13 @@ import { Navegacao } from "../components/Navegacao"
 export function Jogo() {
   return (
     <section className="bg-amarelo-claro dark:bg-vinho-dois min-h-screen">
-      {/* Navegação */}
       <Navegacao />
 
-      {/* Título principal */}
       <h1 className="font-erica text-vinho-um text-3xl sm:text-5xl md:text-7xl lg:text-9xl flex justify-center mt-10 mb-6 dark:text-amarelo">
         Jogo
       </h1>
 
       <div className="flex flex-col md:flex-row p-4 md:p-6">
-        {/* Texto */}
         <div className="w-full md:w-1/2">
           <div>
             <h2 className="flex justify-center items-center mx-2 md:mx-6 font-erica text-center text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-vinho-um dark:text-amarelo">
@@ -32,11 +29,9 @@ export function Jogo() {
           </div>
         </div>
 
-        {/* Linha divisória */}
         <hr className="hidden md:block border-4 border-vinho-um rounded-full dark:border-amarelo mx-6" />
         <hr className="block md:hidden border-2 border-vinho-um rounded-full dark:border-amarelo my-6" />
 
-        {/* Trailer */}
         <div className="w-full md:w-1/2">
           <h2 className="font-erica text-vinho-um text-2xl sm:text-4xl md:text-6xl lg:text-8xl flex justify-center mb-6 dark:text-amarelo">
             TRAILER
