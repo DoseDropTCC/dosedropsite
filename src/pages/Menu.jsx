@@ -1,35 +1,39 @@
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { ThemeContext } from "../context/ThemeContext" 
 import iconelua from "../assets/iconesHeader/iconeLua.png"
 import iconeinfo from "../assets/iconesHeader/iconeInfo.png"
 import iconeconfig from "../assets/iconesHeader/iconeConfig.png"
 import iconelogin from "../assets/iconesHeader/iconeLogIn.png"
 
 export function Menu() {
-  return (
-    <main className="bg-amarelo-claro min-h-screen font-erica flex flex-col">
-      
-      <header className="flex justify-between items-center bg-vinho-um p-4">
-        <Link to="/" className="text-amarelo text-3xl font-bold">X</Link>
-        <img src="/logo192.png" alt="logo" className="h-10 w-10" /> 
-      </header>
+  const { theme, toggle } = useContext(ThemeContext)  
 
-      <div className="flex justify-around bg-amarelo-claro py-4">
-        <button><img src={iconelua} alt="tema" className="h-12 w-12"/></button>
-        <Link to="/tuto"><img src={iconeinfo} alt="info" className="h-12 w-12"/></Link>
-        <Link to="/configuracao"><img src={iconeconfig} alt="config" className="h-12 w-12"/></Link>
-        <Link to="/login"><img src={iconelogin} alt="login" className="h-12 w-12"/></Link>
+  return (
+    <main className={`min-h-screen font-erica flex flex-col 
+      ${theme === "dark" ? "bg-vinho-dois text-amarelo" : "bg-amarelo-claro text-vinho-um"}`}>
+
+      <div className={`flex justify-around py-4 
+        ${theme === "dark" ? "bg-vinho-um" : "bg-amarelo-claro"}`}>
+        
+        <button onClick={toggle}>
+          <img src={iconelua} alt="Trocar tema" className="size-18 cursor-pointer" />
+        </button>
+
+        <Link to="/tuto"><img src={iconeinfo} alt="info" className="size-18"/></Link>
+        <Link to="/configuracao"><img src={iconeconfig} alt="config" className="size-18"/></Link>
+        <Link to="/login"><img src={iconelogin} alt="login" className="size-18"/></Link>
       </div>
 
-      <nav className="flex flex-col text-center mt-4 text-2xl text-vinho-um">
-        <Link to="/projeto" className="py-4 border-b-4 border-vinho-um">Projeto</Link>
-        <Link to="/produto" className="py-4 border-b-4 border-vinho-um">Produto</Link>
-        <Link to="/sobre" className="py-4 border-b-4 border-vinho-um">Sobre nós</Link>
-        <Link to="/jogo" className="py-4 border-b-4 border-vinho-um">Jogo</Link>
-        <Link to="/referencias" className="py-4 border-b-4 border-vinho-um">Referências</Link>
-        <Link to="/itens" className="py-4 border-b-4 border-vinho-um">Itens</Link>
+      <nav className="flex flex-col text-center mt-4 text-2xl">
+        <Link to="/" className="py-4 border-b-4">Home</Link>
+        <Link to="/produto" className="py-4 border-b-4">Produto</Link>
+        <Link to="/jogo" className="py-4 border-b-4">Jogo</Link>
+        <Link to="/referencias" className="py-4 border-b-4">Referências</Link>
+        <Link to="/itens" className="py-4 border-b-4">Itens</Link>
       </nav>
 
-      <footer className="mt-auto text-center p-4 text-vinho-um">
+      <footer className="mt-auto text-center p-4">
         <p>Alguma sugestão? contate-nos!</p>
       </footer>
     </main>

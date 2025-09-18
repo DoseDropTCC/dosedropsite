@@ -24,55 +24,53 @@
   --font-familjen: "Familjen Grotesk", sans-serif;
 }
 
-/* -------------------- BOTÕES -------------------- */
 .bt-header {
   @apply h-20 hover:h-18 duration-400 ease-in-out cursor-pointer;
 }
 
-/* -------------------- LINKS -------------------- */
 .txt-links {
   @apply transition duration-500 hover:text-vinho-dois 
          dark:hover:text-white hover:font-bold;
 }
 
-/* -------------------- CARTÕES -------------------- */
 .cartao-ft {
-  @apply font-familjen bg-amarelo w-150 rounded-xl text-vermelho text-2xl 
-         m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
-
-  @apply md:flex md:items-center md:w-250 md:rounded-2xl md:text-3xl;
-}
-
+    @apply font-familjen bg-amarelo w-full max-w-md rounded-xl text-vermelho text-lg 
+           m-auto mt-6 p-4 dark:bg-vermelho dark:text-amarelo;
+  
+    @apply md:flex md:items-center md:max-w-5xl md:rounded-2xl md:text-2xl md:p-6;
+  }
+  
 .ft-dispenser {
-  @apply rounded-t-xl p-0 h-55 w-full 
-         md:rounded-2xl md:h-80 md:w-80;
-}
-
+    @apply rounded-t-xl w-full h-48 object-contain 
+           md:rounded-2xl md:h-80 md:w-80 md:object-cover;
+  }
+  
 .cartao-produto {
-  @apply flex flex-col items-center justify-center mt-8 px-4 
-         font-familjen font-semibold rounded-lg gap-4;
-
-  @apply md:flex-row md:h-40 md:w-auto md:px-0;
-}
-
+    @apply flex flex-col items-center justify-center mt-6 px-4 gap-4 
+           font-familjen font-semibold;
+  
+    @apply md:flex-row md:gap-10 md:h-40 md:px-0;
+  }
+  
 .ft-cartao-produto {
-  @apply w-full max-w-[160px] object-contain md:ml-5;
-}
-
+    @apply w-full max-w-[120px] object-contain 
+           md:max-w-[160px] md:ml-5;
+  }
+  
 .cartao-produto-ul {
-  @apply p-4 bg-amarelo text-vermelho text-base w-full text-left 
-         dark:bg-vermelho dark:text-amarelo;
-
-  @apply md:text-xl md:w-110;
+    @apply p-4 bg-amarelo text-vermelho text-sm w-full text-left 
+           dark:bg-vermelho dark:text-amarelo;
+  
+    @apply md:text-lg md:w-110 md:rounded-xl;
 }
-
-/* -------------------- TEXTOS -------------------- */
+  
 .txt-sobrenos {
-  @apply font-black flex justify-center text-center text-5xl mb-8 
-         text-vermelho mt-3 dark:text-amarelo;
-
-  @apply md:text-3xl;
+    @apply font-black flex justify-center text-center text-3xl mb-6 
+           text-vermelho mt-3 dark:text-amarelo;
+  
+    @apply md:text-5xl md:mb-8;
 }
+  
 
 .p-jogo {
   @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 
@@ -96,7 +94,6 @@
   }
   
 
-/* -------------------- CONFIG -------------------- */
 .cartão-config {
   @apply bg-vinho-um italic text-white text-3xl h-300 m-5 p-5 
          flex items-center font-semibold shadow-lg rounded-2xl 
@@ -147,10 +144,9 @@
   @apply border-3 border-white dark:border-vinho-dois m-5 mx-0;
 }
 
-/* -------------------- FOTOS & FOOTER -------------------- */
 .fotos-padrao {
-  @apply flex size-80 rounded-3xl ml-50 
-         md:ml-0 md:size-60;
+  @apply flex rounded-3xl ml-12 md:ml-0 
+         w-72 h-72 md:w-70 md:h-70 object-cover;
 }
 
 .footer-contatos {
@@ -158,5 +154,5 @@
 }
 
 .footer-contatos-txt {
-  @apply flex justify-center text-2xl text-amarelo text-center md:ml-5;
+  @apply flex justify-center text-lg md:text-2xl text-amarelo text-center md:ml-5;
 }

@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const Link2 = ({ to, children, ...rest }) => {
-    return (
-      <Link to={to} className="link2" {...rest}>
-        {children}
-      </Link>
-    );
-  };
-  
-  export default Link2;
+export function Link2({ to, children, ...props }) {
+  const navigate = useNavigate();
+
+  return (
+    <button
+      onClick={() => navigate(to)}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+}
