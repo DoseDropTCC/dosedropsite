@@ -42,24 +42,32 @@ export function Home() {
 
   return (
     <main className="bg-amarelo-claro dark:bg-vinho-dois w-full">
-      <div className="relative flex justify-center items-center">
-        <button onClick={anteriorMito} className="absolute left-2 md:left-5 z-10">
-          <img src={setaE} alt="Anterior" className="w-12 h-12 md:w-20 md:h-20 shadow-2xl" />
-        </button>
+     <div className="relative flex justify-center items-center">
+  <button onClick={anteriorMito} className="absolute left-2 md:left-5 z-10">
+    <img
+      src={setaE}
+      alt="Anterior"
+      className="w-12 h-12 md:w-20 md:h-20 shadow-2xl"
+    />
+  </button>
 
-        <div className="w-full h-60 md:h-96 flex justify-center items-center">
-          <img
-            key={indiceAtual}
-            src={mitos[indiceAtual]}
-            alt={`Mito ${indiceAtual + 1}`}
-            className="bg-black w-full h-full object-cover opacity-0 animate-fadeIn"
-          />
-        </div>
+  <div className="w-full h-[200px] md:h-[300px] flex justify-center items-center">
+    <img
+      key={indiceAtual}
+      src={mitos[indiceAtual]}
+      alt={`Mito ${indiceAtual + 1}`}
+      className="bg-black w-full h-[200px] md:h-[300px] object-cover opacity-0 animate-fadeIn"
+    />
+  </div>
 
-        <button onClick={proximoMito} className="absolute right-2 md:right-5 z-10">
-          <img src={setaD} alt="Próximo" className="w-12 h-12 md:w-20 md:h-20 shadow-xl" />
-        </button>
-      </div>
+  <button onClick={proximoMito} className="absolute right-2 md:right-5 z-10">
+    <img
+      src={setaD}
+      alt="Próximo"
+      className="w-12 h-12 md:w-20 md:h-20 shadow-xl"
+    />
+  </button>
+</div>
 
       
       <div className="hidden md:flex font-familjen justify-center p-6 text-vermelho bg-amarelo font-bold dark:bg-vinho-um dark:text-amarelo">

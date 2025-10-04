@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import { Scroll } from "./Scroll.jsx"
 
 export function Navegacao (){

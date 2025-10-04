@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+
 import { useContext } from "react"
 import { ThemeContext } from "../context/ThemeContext" 
 import iconelua from "../assets/iconesHeader/iconeLua.png"

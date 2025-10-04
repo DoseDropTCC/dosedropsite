@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import { Navegacao } from "../components/Navegacao"
 import neyma from "../assets/configuracao/perfil.jpg"
 import olhoAbertoClaro from "../assets/configuracao/olhoAberto.png"
