@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-
+import { Routes, Route } from "react-router"
 import { Home } from "../pages/Home"
 import { Produto } from "../pages/Produto"
 import { Jogo } from "../pages/Jogo"
@@ -13,9 +12,9 @@ import { Menu }  from "../pages/Menu"
 
 export function AppRoutes() {
     return(
-        <Routes>
-            <Route path="/headersite" element={<HeaderSite/>}/>
-            <Route path="/" index element={<Home />}/>
+        <Routes>  
+            <Route path="/headersite" element={<HeaderSite/>}/>       
+            <Route path="/" index element={<Home />}/>          
             <Route path="/produto" element={<Produto />}/>
             <Route path="/jogo" element={<Jogo />}/>
             <Route path="/referencias" element={<Referencias />}/>

@@ -8,6 +8,7 @@ import doselogom from "../assets/imagensMobile/DoseDropLogoM.png"
 import { ThemeContext } from "../context/ThemeContext"
 import { useContext } from "react"
 
+
 export function HeaderSite () {
 
   const { theme, toggle } = useContext(ThemeContext)
@@ -16,13 +17,6 @@ export function HeaderSite () {
     <header className="font-erica flex flex-wrap justify-between items-center bg-vinho-um min-h-20 md:min-h-28 w-full px-4">
       
       <nav className="flex items-center gap-4">
-        <a href="/">
-          <img 
-            src={doselogom} 
-            alt="Dose Drop Logo Mobile" 
-            className="flex md:hidden h-12 w-auto" 
-          />
-        </a>
         
         <a href="/">
           <img 
