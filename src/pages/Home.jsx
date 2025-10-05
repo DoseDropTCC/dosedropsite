@@ -47,16 +47,16 @@ export function Home() {
     <img
       src={setaE}
       alt="Anterior"
-      className="w-12 h-12 md:w-20 md:h-20 shadow-2xl"
+      className="w-12 h-12 md:w-20 md:h-20 shadow-none bg-transparent"
     />
   </button>
 
-  <div className="w-full h-[200px] md:h-[300px] flex justify-center items-center">
+  <div className="w-full h-[200px] md:h-[275px] flex justify-center items-center">
     <img
       key={indiceAtual}
       src={mitos[indiceAtual]}
       alt={`Mito ${indiceAtual + 1}`}
-      className="bg-black w-full h-[200px] md:h-[300px] object-cover opacity-0 animate-fadeIn"
+      className="bg-black w-full h-[200px] md:h-[275px] object-cover opacity-0 animate-fadeIn"
     />
   </div>
 
@@ -64,7 +64,7 @@ export function Home() {
     <img
       src={setaD}
       alt="Próximo"
-      className="w-12 h-12 md:w-20 md:h-20 shadow-xl"
+      className="w-12 h-12 md:w-20 md:h-20 shadow-none bg-transparent"
     />
   </button>
 </div>
