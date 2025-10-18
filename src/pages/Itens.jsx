@@ -9,7 +9,7 @@ import filamento from "../assets/pecasProjeto/filamento.png"
 
 export function Itens() {
     return(
-        <main className="bg-amarelo-claro dark:bg-vinho-dois min-h-screen p-4 sm:p-6 md:p-10">
+      <main className="bg-amarelo-claro dark:bg-vinho-dois w-full overflow-x-hidden">
        <section>
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 mt-10 text-center md:text-left">

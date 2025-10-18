@@ -34,12 +34,9 @@
 }
 
 .cartao-ft {
-    @apply font-familjen bg-amarelo w-full max-w-md rounded-xl text-vermelho text-lg 
-           m-auto mt-6 p-4 dark:bg-vermelho dark:text-amarelo;
-  
-    @apply md:flex md:items-center md:max-w-5xl md:rounded-2xl md:text-2xl md:p-6;
-  }
-  
+  @apply font-familjen flex items-center bg-amarelo w-250 rounded-2xl text-vermelho text-3xl m-auto mt-10 dark:bg-vermelho dark:text-amarelo;
+}
+
 .ft-dispenser {
     @apply rounded-t-xl w-full h-48 object-contain 
            md:rounded-2xl md:h-80 md:w-80 md:object-cover;
@@ -73,17 +70,12 @@
   
 
 .p-jogo {
-  @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 
-         flex items-center font-semibold shadow-lg rounded-2xl 
-         dark:text-amarelo dark:bg-vermelho;
-
-  @apply md:h-auto md:text-2xl;
+  @apply bg-amarelo italic text-vermelho text-3xl h-50 m-5 p-5 flex items-center font-semibold shadow-lg rounded-2xl dark:text-amarelo dark:bg-vermelho;
 }
 
 .refs {
-    @apply flex flex-col items-start text-vinho-um underline m-3 
-           dark:text-amarelo text-base md:text-lg;
-  }
+  @apply flex items-center justify-start text-6xl font-erica italic text-vermelho underline m-5 ml-30 dark:text-amarelo;
+}
   
 .refs-h1 {
     @apply text-2xl font-bold font-erica md:text-4xl;
@@ -93,12 +85,42 @@
     @apply text-sm italic font-familjen md:text-lg;
   }
   
+/* --- classes usadas no componente --- */
 
-.cartão-config {
-  @apply bg-vinho-um italic text-white text-3xl h-300 m-5 p-5 
+/* mobile/current */
+.info-config {
+  @apply text-white dark:text-amarelo font-erica text-lg;
+}
+
+.txt-config {
+  @apply text-white dark:text-amarelo font-familjen text-lg;
+}
+
+.p-config {
+  @apply font-familjen text-vermelho font-bold text-lg dark:text-amarelo max-w-full;
+}
+
+.input-config {
+  @apply transition duration-300 bg-vermelho-claro text-white h-14 rounded-xl font-familjen mb-4 hover:bg-vermelho border-none p-4 outline-none w-full max-w-full box-border;
+}
+
+.bt-config1 {
+  @apply bg-vinho-dois dark:bg-vinho-um dark:text-amarelo text-white font-familjen text-lg font-semibold w-full max-w-full box-border;
+}
+
+.bt-config2 {
+  @apply bg-vermelho text-white font-familjen text-lg font-semibold w-full max-w-full box-border;
+}
+
+.hr-config {
+  @apply border-2 border-white dark:border-vinho-dois my-4;
+}
+
+/* antigo (desktop) - mantive e adaptei algumas propriedades responsivas */
+.cartao-config {
+  @apply bg-vinho-um italic text-white text-3xl h-300  m-5 p-5 
          flex items-center font-semibold shadow-lg rounded-2xl 
          dark:text-vermelho dark:bg-amarelo;
-
   @apply md:h-auto md:text-2xl;
 }
 
@@ -110,27 +132,32 @@
   @apply text-white dark:text-amarelo font-familjen text-xl ml-10;
 }
 
+/* p-config e input-config já definidos acima; sobrescreva para desktop se quiser */
 .p-config {
   @apply font-familjen text-vermelho font-bold text-xl dark:text-amarelo;
 }
 
 .input-config {
-  @apply transition duration-300 bg-vermelho-claro text-white w-130 h-14 
-         rounded-xl font-familjen mb-10 hover:bg-vermelho border-none 
-         text-left p-5 outline-none;
-
-  @apply md:w-150;
+  @apply transition duration-300 bg-vermelho-claro text-white w-full h-14 rounded-xl font-familjen mb-10 hover:bg-vermelho border-none text-left p-5 outline-none;
+  @apply md:w-full;
 }
 
 .bt-config1 {
-  @apply bg-vinho-dois dark:bg-vinho-um dark:text-amarelo 
-         w-100 h-14 mb-10 text-white font-familjen rounded-2xl text-xl;
+  @apply bg-vinho-dois dark:bg-vinho-um dark:text-amarelo w-full h-14 mb-10 text-white font-familjen rounded-2xl text-xl;
 }
 
 .bt-config2 {
-  @apply bg-vermelho w-100 h-14 mb-10 text-white 
-         font-familjen rounded-2xl text-xl;
+  @apply bg-vermelho w-full h-14 mb-10 text-white font-familjen rounded-2xl text-xl;
 }
+
+.hr-config {
+  @apply border-3 border-white dark:border-vinho-dois m-5 mx-0;
+}
+
+/* Helpers (tamanho dos ícones e imagens que usamos no componente) */
+.size-25 { width: 84px; height: 84px; }
+.size-15 { width: 36px; height: 36px; }
+
 
 .p-tuto {
   @apply bg-amarelo italic text-vermelho text-3xl h-100 m-10 p-10 mb-1 
@@ -138,10 +165,6 @@
          dark:text-amarelo dark:bg-vermelho;
 
   @apply md:h-auto md:text-2xl;
-}
-
-.hr-config {
-  @apply border-3 border-white dark:border-vinho-dois m-5 mx-0;
 }
 
 .fotos-padrao {

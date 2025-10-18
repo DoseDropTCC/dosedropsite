@@ -14,16 +14,15 @@ export function Menu() {
     <main className={`min-h-screen font-erica flex flex-col 
       ${theme === "dark" ? "bg-vinho-dois text-amarelo" : "bg-amarelo-claro text-vinho-um"}`}>
 
-      <div className={`flex justify-around py-4 
-        ${theme === "dark" ? "bg-vinho-um" : "bg-amarelo-claro"}`}>
+      <div className={`flex justify-around py-4 bg-vinho-dois`}>
         
         <button onClick={toggle}>
-          <img src={iconelua} alt="Trocar tema" className="size-18 cursor-pointer" />
+          <img src={iconelua} alt="Trocar tema" className="size-20 cursor-pointer" />
         </button>
 
-        <Link to="/tuto"><img src={iconeinfo} alt="info" className="size-18"/></Link>
-        <Link to="/configuracao"><img src={iconeconfig} alt="config" className="size-18"/></Link>
-        <Link to="/login"><img src={iconelogin} alt="login" className="size-18"/></Link>
+        <Link to="/tuto"><img src={iconeinfo} alt="info" className="size-20"/></Link>
+        <Link to="/configuracao"><img src={iconeconfig} alt="config" className="size-20"/></Link>
+        <Link to="/login"><img src={iconelogin} alt="login" className="size-20"/></Link>
       </div>
 
       <nav className="flex flex-col text-center mt-4 text-2xl">

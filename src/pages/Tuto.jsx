@@ -2,10 +2,12 @@ import { Navegacao } from "../components/Navegacao"
 
 export function Tuto() {
   return (
-    <main className="bg-amarelo-claro dark:bg-vinho-dois min-h-screen">
-      <Navegacao />
-
+    <main className="bg-amarelo-claro dark:bg-vinho-dois w-full overflow-x-hidden">
       
+      <div className="hidden md:block bg-amarelo-claro dark:bg-vinho-dois">
+        <Navegacao />
+      </div>
+
       <h1 className="font-erica text-vinho-um text-4xl sm:text-6xl md:text-7xl flex justify-center text-center mt-6 md:mt-12 mb-12 px-4 dark:text-amarelo">
         Como utilizar o Dose Drop
       </h1>

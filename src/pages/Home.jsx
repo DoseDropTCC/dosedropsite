@@ -41,7 +41,7 @@ export function Home() {
   };
 
   return (
-    <main className="bg-amarelo-claro dark:bg-vinho-dois w-full">
+    <main className="bg-amarelo-claro dark:bg-vinho-dois w-full owerflow-x">
      <div className="relative flex justify-center items-center">
   <button onClick={anteriorMito} className="absolute left-2 md:left-5 z-10">
     <img
@@ -81,40 +81,42 @@ export function Home() {
       </div>
 
       
-      <div className="cartao-ft flex flex-col md:flex-row items-center p-5 md:p-10">
-        <img src={dispenser} alt="dispenser" className="ft-dispenser w-40 md:w-60" />
-        <p className="p-5 text-center md:text-left">
+      <div className="cartao-ft flex flex-col md:flex-row items-center p-2 md:p-10">
+        <img src={dispenser} alt="dispenser" className="ft-dispenser w-60 md:w-60" />
+        <p className="p-2 text-center md:text-left">
           Uma caixa de remédios automática, para regular remédios para idosos, com o objetivo de
-          orientar a hora certa de usar seus remédios. Também haverá despertadores caso o idoso não
-          compareça para pegar seu remédio.
-        </p>
+          orientar a hora certa de usar seus remédios.
+          </p>
       </div>
 
-      <div className="cartao-ft flex flex-col md:flex-row items-center p-5 md:p-10">
-        <img src={dispenser} alt="dispenser" className="ft-dispenser w-40 md:w-60" />
-        <p className="p-5 text-center md:text-left">
+      <div className="cartao-ft flex flex-col md:flex-row items-center p-2 md:p-10">
+        <img src={dispenser} alt="dispenser" className="ft-dispenser w-60 md:w-60" />
+        <p className="p-2 text-center md:text-left">
           Seu diferencial será uma agenda para anotar os remédios que já foram disponibilizados no
           devido dia, com uma tela LCD para executar essa função.
         </p>
       </div>
 
-      
+   
       <div id="projeto">
-        <h1 className="font-erica text-vermelho text-4xl md:text-8xl flex justify-center mt-10 md:mt-15 dark:text-amarelo">
-          Nosso App
-        </h1>
-      </div>
-      <div className="flex justify-center px-2">
-        <iframe
-          className="rounded-2xl md:rounded-3xl mt-5 w-full max-w-md md:max-w-3xl"
-          height="315"
-          src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        />
-      </div>
+  <h1 className="font-erica text-vermelho text-4xl md:text-8xl flex justify-center mt-10 mb-10 md:mt-15 md:mb-15 dark:text-amarelo">
+    Nosso App
+  </h1>
+</div>
+
+<div className="flex justify-center px-2">
+  <div className="relative w-full max-w-3xl" style={{ aspectRatio: "16 / 9" }}>
+    <iframe
+      className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl"
+      src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    />
+  </div>
+</div>
+
 
       <nav className="mt-10 flex justify-center text-base md:text-xl px-4">
         <a
@@ -127,11 +129,11 @@ export function Home() {
 
       
       <div>
-        <h1 className="font-erica text-vermelho text-4xl md:text-8xl flex justify-center mt-10 md:mt-15 dark:text-amarelo">
+        <h1 className="font-erica text-vermelho text-4xl md:text-8xl flex justify-center mt-10 mb-10 md:mt-15 md:mb-15 dark:text-amarelo">
           Sobre Nós
         </h1>
 
-        <div className="p-10 md:p-1 flex flex-col md:flex-row md:justify-between gap-10 md:gap-5 items-center">
+        <div className="p-10 flex flex-col md:flex-row md:mx-20 gap-10 items-center md:p-8 md:justify-between">
           <a
             href="https://www.linkedin.com/in/kawan-ribeiro-9013b9338"
             target="_blank"
@@ -139,7 +141,7 @@ export function Home() {
             className="flex flex-col items-center"
           >
             <img
-              className="fotos-padrao w-32 h-32 md:w-40 md:h-40 rounded-full object-cover transition-all duration-300 cursor-pointer "
+              className="fotos-padrao w-32 h-32 mr-11 md:m-0 md:w-40 md:h-40 rounded-full transition-all duration-300 cursor-pointer "
               src={kawanfoto}
               onMouseEnter={() => setMouseKawan(true)}
               onMouseLeave={() => setMouseKawan(false)}
@@ -156,7 +158,7 @@ export function Home() {
             className="flex flex-col items-center"
           >
             <img
-              className="fotos-padrao w-32 h-32 md:w-40 md:h-40 rounded-full object-cover cursor-pointer"
+              className="fotos-padrao w-32 h-32 mr-11 md:m-0 md:w-40 md:h-40 rounded-full object-cover cursor-pointer"
               src={renatofoto}
               onMouseEnter={() => setMouseRenato(true)}
               onMouseLeave={() => setMouseRenato(false)}
@@ -173,7 +175,7 @@ export function Home() {
             className="flex flex-col items-center"
           >
             <img
-              className="fotos-padrao w-32 h-32 md:w-40 md:h-10 rounded-full object-cover cursor-pointer"
+              className="fotos-padrao w-32 h-32 mr-11 md:m-0 md:w-40 md:h-10 rounded-full object-cover cursor-pointer"
               src={gustavofoto}
               onMouseEnter={() => setMouseGustavo(true)}
               onMouseLeave={() => setMouseGustavo(false)}
@@ -190,7 +192,7 @@ export function Home() {
             className="flex flex-col items-center"
           >
             <img
-              className="fotos-padrao w-32 h-32 md:w-40 md:h-40 rounded-full object-cover cursor-pointer"
+              className="fotos-padrao w-32 h-32 mr-11 md:m-0 md:w-40 md:h-40 rounded-full object-cover cursor-pointer"
               src={gabrielfoto}
               onMouseEnter={() => setMouseGabriel(true)}
               onMouseLeave={() => setMouseGabriel(false)}
