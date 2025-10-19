@@ -4,41 +4,96 @@ import wpp from "../assets/redes/wpp.png";
 import gmail from "../assets/redes/gmail.png";
 
 export function FooterSite() {
-return ( <footer className="bg-vinho-um p-10 md:p-14 font-familjen">
+  return (
+    <footer className="bg-vinho-um text-amarelo font-familjen w-full text-center">
 
-  <div className="flex flex-col md:flex-row justify-center items-center text-center gap-4 mb-10">
-    <p className="text-amarelo text-4xl md:text-6xl font-bold">
-      Clique na estrela para avaliar-nos!
-    </p>
-    <img 
-      src={estrela} 
-      alt="Ícone de estrela" 
-      className="w-14 h-14 md:w-20 md:h-20 cursor-pointer hover:scale-110 transition-transform"
-    />
-  </div>
+      {/* ===== DESKTOP ===== */}
+      <div className="hidden md:block py-8 px-10">
+        {/* Linha topo */}
+        <div className="flex justify-center items-center gap-3 mb-6">
+          <p className="text-3xl font-medium">
+            Clique na estrela para avaliar-nos!
+          </p>
+          <img
+            src={estrela}
+            alt="Ícone de estrela"
+            className="w-8 h-8 md:w-10 md:h-10"
+          />
+        </div>
 
-  <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20 mb-10">
-    <div className="flex items-center gap-4">
-      <img src={insta} alt="Logo do Instagram" className="w-10 h-10 md:w-14 md:h-14" />
-      <p className="text-amarelo text-2xl md:text-3xl">@dose_drop</p>
-    </div>
+        {/* Contatos */}
+        <div className="flex justify-center items-center gap-20 mb-8">
+          {/* Instagram */}
+          <div className="flex flex-col items-center">
+            <img
+              src={insta}
+              alt="Logo do Instagram"
+              className="w-10 h-10 mb-2"
+            />
+            <p className="text-xl">@dose_drop</p>
+          </div>
 
-    <div className="flex items-center gap-4">
-      <img src={wpp} alt="Logo do Whatsapp" className="w-10 h-10 md:w-14 md:h-14" />
-      <p className="text-amarelo text-2xl md:text-3xl">11 95821 - 7823</p>
-    </div>
+          {/* WhatsApp */}
+          <div className="flex flex-col items-center">
+            <img
+              src={wpp}
+              alt="Logo do WhatsApp"
+              className="w-10 h-10 mb-2"
+            />
+            <p className="text-xl">11 95821 - 7823</p>
+          </div>
 
-    <div className="flex items-center gap-4">
-      <img src={gmail} alt="Logo do Gmail" className="w-10 h-10 md:w-14 md:h-14" />
-      <p className="text-amarelo text-2xl md:text-3xl">dosedroptcc@gmail.com</p>
-    </div>
-  </div>
+          {/* Gmail */}
+          <div className="flex flex-col items-center">
+            <img
+              src={gmail}
+              alt="Logo do Gmail"
+              className="w-10 h-10 mb-2"
+            />
+            <p className="text-xl">dosedroptcc@gmail.com</p>
+          </div>
+        </div>
 
-  <p className="text-amarelo text-center text-xl md:text-2xl font-medium">
-    dose_drop - Todos os direitos reservados © 2024 - 2025
-  </p>
-</footer>
+        {/* Rodapé */}
+        <p className="text-2xl text-center">
+          dose_drop - todos os direitos reservados 2024 - 2025
+        </p>
+      </div>
 
+      {/* ===== MOBILE ===== */}
+      <div className="flex flex-col items-center gap-6 p-8 md:hidden">
+        {/* Título */}
+        <p className="text-2xl font-medium underline decoration-amarelo mb-2">
+          Alguma sugestão? contate-nos!
+        </p>
 
-);
+        {/* Contatos */}
+        <div className="flex flex-col">
+          {/* Instagram */}
+          <div className="flex gap-3 ">
+            <p className="text-xl -ml-10">@dose_drop</p>
+            <img src={insta} alt="Instagram" className="w-10 h-10 ml-25.5" />
+          </div>
+
+          {/* WhatsApp */}
+          <div className="flex">
+            <p className="text-xl -ml-10">11 95821 - 7823</p>
+            <img src={wpp} alt="WhatsApp" className="w-10 h-10 ml-20" />
+          </div>
+
+          {/* Gmail */}
+          <div className="flex">
+            <p className="text-xl -ml-10">dosedroptcc@gmail.com</p>
+            <img src={gmail} alt="Gmail" className="w-10 h-10 ml-3" />
+          </div>
+        </div>
+
+        {/* Rodapé inferior */}
+        <p className="text-lg mt-4 text-center">
+          © dose_drop - todos os direitos reservados<br />
+          2024 - 2025
+        </p>
+      </div>
+    </footer>
+  );
 }
