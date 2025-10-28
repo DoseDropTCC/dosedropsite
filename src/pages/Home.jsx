@@ -81,19 +81,19 @@ export function Home() {
       </div>
 
       
-      <div className="cartao-ft flex flex-col md:flex-row items-center p-2 md:p-10">
-        <img src={dispenser} alt="dispenser" className="ft-dispenser w-60 md:w-60" />
+      <div className="cartao-ft ">
+        <img src={dispenser} alt="dispenser" className="ft-dispenser" />
         <p className="p-2 text-center md:text-left">
           Uma caixa de remédios automática, para regular remédios para idosos, com o objetivo de
           orientar a hora certa de usar seus remédios.
           </p>
       </div>
 
-      <div className="cartao-ft flex flex-col md:flex-row items-center p-2 md:p-10">
-        <img src={dispenser} alt="dispenser" className="ft-dispenser w-60 md:w-60" />
+      <div className="cartao-ft ">
+        <img src={dispenser} alt="dispenser" className="ft-dispenser" />
         <p className="p-2 text-center md:text-left">
-          Seu diferencial será uma agenda para anotar os remédios que já foram disponibilizados no
-          devido dia, com uma tela LCD para executar essa função.
+          Seu diferencial é a quantidade de motores para executar a função de despejar o remedio, com 2 motores a automação
+          se torna extremamente eficiente junto a um lcd que mostra o timer em tempo real para o usuario compreender melhor o processo.
         </p>
       </div>
 
@@ -120,7 +120,7 @@ export function Home() {
 
       <nav className="mt-10 flex justify-center text-base md:text-xl px-4">
         <a
-          href="https://youtu.be/eSRgRVx9ZjQ?si=fhzOWhVypZA9-qXp"
+          href=""
           className="ease-in-out duration-300 underline text-center text-vermelho bg-amarelo px-4 py-3 font-familjen dark:bg-vermelho dark:text-amarelo hover:bg-vinho-um hover:text-amarelo shadow-2xl rounded-lg"
         >
           CLIQUE AQUI PARA ACESSAR O NOSSO APP

@@ -38,8 +38,7 @@
 }
 
 .ft-dispenser {
-    @apply rounded-t-xl w-full h-48 object-contain 
-           md:rounded-2xl md:h-80 md:w-80 md:object-cover;
+    @apply rounded-t-xl w-full h-48 object-contain md:flex md:rounded-2xl md:h-80 md:w-80 md:object-cover;
   }
   
 .cartao-produto {

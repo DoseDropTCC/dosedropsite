@@ -15,21 +15,18 @@ export function Jogo() {
       {/* Container principal */}
       <div className="flex flex-col md:flex-row items-center md:items-start p-5 md:p-8">
         
-        {/* --- Coluna esquerda (texto) --- */}
+        {/* --- Coluna esquerda (texto) ---  feito por grabriel silva de oliveira pinto*/}
         <div className="w-full md:w-1/2">
           <h2 className="flex justify-center text-center font-erica text-vinho-um text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 dark:text-amarelo">
-            Elderies VS Medicines
+            Medicine Attack
           </h2>
 
           <p className="bg-amarelo italic text-vermelho text-base sm:text-lg md:text-2xl m-4 p-5 leading-relaxed font-semibold shadow-lg rounded-2xl dark:text-amarelo dark:bg-vermelho">
-            Elderies VS Medicine será o nosso jogo, no estilo tower defense
-            inspirado no Plants VS Zombies, jogo que popularizou os tower
-            defenses.
+            Medicine Attack é um jogo de plataforma baseado na franquia super mario bros e mega man, estilo plataforma pixel art.
           </p>
 
           <p className="bg-amarelo italic text-vermelho text-base sm:text-lg md:text-2xl m-4 p-5 leading-relaxed font-semibold shadow-lg rounded-2xl dark:text-amarelo dark:bg-vermelho">
-            O objetivo será defender sua base dos idosos, com medicamentos que
-            possuem mecânicas únicas com o objetivo principal de curar idosos.
+            O objetivo se consiste em derrotar robos interdimencionais, assim chegando ao boss que é um guardiao dimencional que te enviara para o mundo do eternavirus eternamax, um virus mortal que assombra o mundo moderno.
           </p>
         </div>
 

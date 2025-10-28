@@ -22,7 +22,7 @@ export function FooterSite() {
         </div>
 
         {/* Contatos */}
-        <div className="flex justify-center items-center gap-20 mb-8">
+        <div className="flex justify-center items-center gap-20 mb-8 pl-15">
           {/* Instagram */}
           <div className="flex flex-col items-center">
             <img

@@ -49,7 +49,7 @@ export function Itens() {
           <li className="-ml-8">Ações</li>
         </ul>
 
-        <hr className="border-amarelo border-8 dark:border-vermelho mt-3" />
+        <hr className="border-amarelo border-2 md:border-8 dark:border-vermelho mt-3" />
 
         {/* Itens */}
         {itens.map((item, idx) => (
@@ -109,7 +109,7 @@ export function Itens() {
                 </li>
               </ul>
 
-              <hr className="border-amarelo border-8 dark:border-vermelho -mt-2" />
+              <hr className="border-amarelo border-2 md:border-8 dark:border-vermelho mt-3" />
             </div>
 
             {/* ===== MOBILE ===== */}
