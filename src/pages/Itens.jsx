@@ -3,10 +3,11 @@ import { Navegacao } from "../components/Navegacao";
 
 import passoMotor from "../assets/pecasProjeto/passoMotor.png";
 import esp from "../assets/pecasProjeto/esp.png";
-import sensorToque from "../assets/pecasProjeto/sensorToque.png";
+import led from "../assets/pecasProjeto/led.png";
 import buzzer from "../assets/pecasProjeto/buzzer.png";
-import display from "../assets/pecasProjeto/display.png";
 import filamento from "../assets/pecasProjeto/filamento.png";
+import lcd from "../assets/pecasProjeto/lcd.png";
+import rtc from "../assets/pecasProjeto/rtc.jpg";
 
 import lapisA from "../assets/itens/LapisA.png";
 import lixeiraA from "../assets/itens/lixeiraA.png";
@@ -17,9 +18,10 @@ export function Itens() {
   const itens = [
     { img: passoMotor, nome: "Motor de Passo 28BYJ-48", preco: "R$: 67,90" },
     { img: esp, nome: "ESP32s Bluetooth 38 pinos", preco: "R$: 69,90" },
-    { img: display, nome: "TFT Polegadas 240x320", preco: "R$: 74,60" },
+    { img: lcd, nome: "Display LCD I2C", preco: "R$:65,00" },
     { img: buzzer, nome: "ZX Buzzer 5v Ativo", preco: "R$: 2,50" },
-    { img: sensorToque, nome: "Sensor de toque", preco: "R$: 13,40" },
+    { img: led, nome: "Kit 50 Peças Led Difuso", preco: "R$: 19,00" },
+    { img: rtc, nome: "Módulo Tiny RTC DS1307", preco: "R$: 8,90" },
     { img: filamento, nome: "Filamento Preto/multicolor", preco: "R$: 101,50" },
   ];
 
@@ -79,7 +81,7 @@ export function Itens() {
                 <img
                   src={lixeiraA}
                   alt="icone lixeira amarela"
-                  className="rounded-2xl size-30 ml-207 -mt-30 dark:hidden"
+                  className="rounded-2xl size-30 ml-225 -mt-30 dark:hidden"
                 />
                 <img
                   src={lixeiraV}
@@ -93,16 +95,18 @@ export function Itens() {
                 <li
                   className={
                     idx === 0
-                      ? "-mt-30 -ml-22"
+                      ? "-mt-32 -ml-22"
                       : idx === 1
                       ? "-mt-30 -ml-26"
                       : idx === 2
-                      ? "-mt-30 -ml-15"
+                      ? "-mt-30 ml-10"
                       : idx === 3
                       ? "-mt-30 ml-0.5"
                       : idx === 4
-                      ? "-mt-30 ml-7"
-                      : "-mt-30 -ml-27"
+                      ? "-mt-30 -ml-14"
+                      : "-mt-30 -ml-40"
+                      ? "-mt-30 -ml-23"
+                      : "-mt-30 -ml-34"
                   }
                 >
                   {item.preco}

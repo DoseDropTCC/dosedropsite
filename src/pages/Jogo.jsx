@@ -26,7 +26,7 @@ export function Jogo() {
           </p>
 
           <p className="bg-amarelo italic text-vermelho text-base sm:text-lg md:text-2xl m-4 p-5 leading-relaxed font-semibold shadow-lg rounded-2xl dark:text-amarelo dark:bg-vermelho">
-            O objetivo se consiste em derrotar robos interdimencionais, assim chegando ao boss que é um guardiao dimencional que te enviara para o mundo do eternavirus eternamax, um virus mortal que assombra o mundo moderno.
+            O objetivo se consiste em derrotar robos interdimencionais, assim chegando ao boss que é um guardiâo dimencional que te enviara para o mundo do eternavirus eternamax, um virus mortal que assombra o mundo moderno.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function Jogo() {
           <div className="w-full max-w-[740px] aspect-video rounded-3xl overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP"
+              src="https://www.youtube.com/embed/TWBIWL32QP4"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

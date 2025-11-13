@@ -2,11 +2,14 @@ import { Navegacao } from "../components/Navegacao"
 
 import passoMotor from "../assets/pecasProjeto/passoMotor.png"
 import esp from "../assets/pecasProjeto/esp.png"
-import sensorToque from "../assets/pecasProjeto/sensorToque.png"
 import buzzer from "../assets/pecasProjeto/buzzer.png"
-import display from "../assets/pecasProjeto/display.png"
 import filamento from "../assets/pecasProjeto/filamento.png"
 import resultado from "../assets/pecasProjeto/resultado.png"
+import rtc from "../assets/pecasProjeto/rtc.jpg"
+import led from "../assets/pecasProjeto/led.png"
+import lcd from "../assets/pecasProjeto/lcd.png"
+import img4 from "../assets/fotosProjeto/img4.png"
+
 
 export function Produto() {
   return (
@@ -49,11 +52,11 @@ export function Produto() {
           </div>
 
           <div className="cartao-produto">
-            <img src={sensorToque} alt="Sensor de Toque" className="ft-cartao-produto rounded-3xl" />
+            <img src={led} alt="Sensor de Toque" className="ft-cartao-produto rounded-3xl" />
             <ul className="cartao-produto-ul rounded-2xl">
-              <li>Módulo Sensor De Toque capacitivo TTP223B</li>
-              <li>2–5,5V</li>
-              <li>Valor: R$ 5,90</li>
+              <li>LED Vermelho Difuso</li>
+              <li>3mm</li>
+              <li>Valor: R$ 1,00</li>
             </ul>
           </div>
 
@@ -61,17 +64,17 @@ export function Produto() {
             <img src={buzzer} alt="Buzzer" className="ft-cartao-produto rounded-3xl" />
             <ul className="cartao-produto-ul rounded-2xl">
               <li>Buzzer Passivo 5v</li>
-              <li>3,5 – 5V</li>
+              <li>3,5 - 5V</li>
               <li>Valor: R$ 2,50</li>
             </ul>
           </div>
 
           <div className="cartao-produto">
-            <img src={display} alt="Display LCD" className="ft-cartao-produto rounded-3xl" />
+            <img src={lcd} alt="Display LCD" className="ft-cartao-produto rounded-3xl" />
             <ul className="cartao-produto-ul rounded-2xl">
-              <li>2.4 Display LCD colorido Spi Tft</li>
-              <li>240x320</li>
-              <li>Valor: R$ 52,85</li>
+              <li>Display LCD I2C</li>
+              <li>16x2</li>
+              <li>Valor: R$ 29,90</li>
             </ul>
           </div>
 
@@ -88,6 +91,16 @@ export function Produto() {
               <li>Valor: R$ 177,69</li>
             </ul>
           </div>
+          <div className="cartao-produto">
+            <img src={rtc} alt="Passo Motor" className="ft-cartao-produto rounded-3xl" />
+            <ul className="cartao-produto-ul rounded-2xl">
+              <li></li>
+              <li>Módulo Tiny RTC DS1307
+              <li>Real Time Clock</li>
+              </li>
+              <li>Valor: R$ 8,90</li>
+            </ul>
+          </div>
         </div>
 
         {/* --- Coluna Direita: Apresentação / Resultado --- */}
@@ -99,7 +112,7 @@ export function Produto() {
           <div className="flex justify-center mt-5 w-full">
             <iframe
               className="rounded-3xl w-full max-w-xl aspect-video"
-              src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP"
+              src="https://www.youtube.com/embed/kMD0yxVX6mI?autoplay=0&start=0"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -117,12 +130,13 @@ export function Produto() {
           <h2 className="flex justify-center font-erica text-vinho-um text-2xl sm:text-3xl mt-5 dark:text-amarelo">
             Resultado final:
           </h2>
-
+         <div>
           <img
             className="w-full max-w-xl mx-auto rounded-3xl mt-10 mb-24"
-            src={resultado}
+            src={img4}
             alt="Imagem do produto final"
           />
+          </div>
         </div>
       </section>
     </main>

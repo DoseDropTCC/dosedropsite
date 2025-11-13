@@ -15,7 +15,9 @@ import { FooterSite } from "../components/FooterSite";
 import kawanL from "../assets/fotosLinkedin/kawanLinkedin.png";
 import renatoL from "../assets/fotosLinkedin/renatoLinkedin.png";
 import gustavoL from "../assets/fotosLinkedin/gustavoLinkedin.png";
-import gabrielL from "../assets/fotosLinkedin/gabrielLinkedin.png"; 
+import gabrielL from "../assets/fotosLinkedin/gabrielLinkedin.png";
+import img1 from "../assets/fotosProjeto/img1.png";
+import img2 from "../assets/fotosProjeto/img2.png";
 import Popup from "reactjs-popup";
 
 export function Home() {
@@ -82,7 +84,7 @@ export function Home() {
 
       
       <div className="cartao-ft ">
-        <img src={dispenser} alt="dispenser" className="ft-dispenser" />
+        <img src={img1} alt="dispenser" className="ft-dispenser" />
         <p className="p-2 text-center md:text-left">
           Uma caixa de remédios automática, para regular remédios para idosos, com o objetivo de
           orientar a hora certa de usar seus remédios.
@@ -90,7 +92,7 @@ export function Home() {
       </div>
 
       <div className="cartao-ft ">
-        <img src={dispenser} alt="dispenser" className="ft-dispenser" />
+        <img src={img2} alt="dispenser" className="ft-dispenser" />
         <p className="p-2 text-center md:text-left">
           Seu diferencial é a quantidade de motores para executar a função de despejar o remedio, com 2 motores a automação
           se torna extremamente eficiente junto a um lcd que mostra o timer em tempo real para o usuario compreender melhor o processo.
@@ -108,7 +110,7 @@ export function Home() {
   <div className="relative w-full max-w-3xl" style={{ aspectRatio: "16 / 9" }}>
     <iframe
       className="absolute top-0 left-0 w-full h-full rounded-2xl md:rounded-3xl"
-      src="https://www.youtube.com/embed/DXqMe5Xuvyw?si=QQeEWLgTiniVERXP"
+      src="https://www.youtube.com/embed/YaaEGniKtfI"
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerPolicy="strict-origin-when-cross-origin"
